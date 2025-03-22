@@ -1,0 +1,1 @@
+Focus List: <Vul_Type_1,f_1>,...,<Vul_Type_n,f_n>

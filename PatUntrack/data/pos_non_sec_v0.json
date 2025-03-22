@@ -1,0 +1,1394 @@
+[
+  {
+    "ID": 1,
+    "IR": "https://github.com/opencv/opencv/issues/15624",
+    "IR_Create_Time": "2019-10-02T14:01:42Z",
+    "Desc": "Yes, this issue report has security implications. The failure of APITAG on Linux with the error message \"VIDIOC_REQBUFS: Inappropriate ioctl for device\" when the filename contains a colon indicates a potential vulnerability that could be exploited by an attacker to cause a denial of service or potentially execute arbitrary code on the system. This issue may relate to security as it could lead to system instability or compromise if not addressed."
+  },
+  {
+    "ID": 2,
+    "IR": "https://github.com/riot-os/riot/issues/11603",
+    "IR_Create_Time": "2019-05-28T23:19:30Z",
+    "Desc": "Yes, \nThis issue report does not include any information regarding security vulnerabilities. It solely discusses a functionality related to the NativeIncludes not including USEMODULE_INCLUDES from log_printfnoformat, which does not pose a security risk."
+  },
+  {
+    "ID": 3,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/1239",
+    "IR_Create_Time": "2019-11-13T14:07:57Z",
+    "Desc": "Yes, this issue report does potentially have security implications. The mention of \"Ghidra Server packaging\" suggests that there may be vulnerabilities or weaknesses in how the Ghidra Server software is packaged or distributed, which could potentially be exploited by malicious actors. This could lead to security breaches or unauthorized access to sensitive information."
+  },
+  {
+    "ID": 4,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/6791",
+    "IR_Create_Time": "2019-11-14T17:29:06Z",
+    "Desc": "Yes, this IR has a security issue. Creating a possibility to send location from the APITAG can potentially lead to security concerns such as leaking sensitive location data, unauthorized tracking of users, and potential exploitation by malicious actors."
+  },
+  {
+    "ID": 5,
+    "IR": "https://github.com/antswordproject/antsword/issues/227",
+    "IR_Create_Time": "2019-11-18T06:58:36Z",
+    "Desc": "Yes, this IR has potential security issues. The mention of AES encryption and Chinese garbled characters in the client-side encryption process may indicate vulnerabilities in the encryption implementation, which could lead to security breaches such as data leakage or unauthorized access. It is important to thoroughly investigate and address these issues to ensure the security of the system."
+  },
+  {
+    "ID": 6,
+    "IR": "https://github.com/manageiq/manageiq/issues/18582",
+    "IR_Create_Time": "2019-03-22T07:49:01Z",
+    "Desc": "Yes, this issue report potentially has security implications. The mention of \"MIQ Redfish API version\" could indicate a vulnerability in the Redfish API implementation, which may need to be disclosed in a Common Vulnerabilities and Exposures (CVE) entry. Further investigation is needed to determine the specific security issues involved."
+  },
+  {
+    "ID": 7,
+    "IR": "https://github.com/elabftw/elabftw/issues/1339",
+    "IR_Create_Time": "2019-06-06T11:02:36Z",
+    "Desc": "Yes, this issue report relates to security.\nThis report suggests the possibility of modifying advanced php SAML settings, which can potentially lead to security vulnerabilities such as unauthorized access, tampering with authentication processes, and other risks related to the integrity and confidentiality of SAML authentication. This issue should be disclosed in CVE for awareness and mitigation."
+  },
+  {
+    "ID": 8,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/6474",
+    "IR_Create_Time": "2019-09-01T17:53:03Z",
+    "Desc": "Yes, this IR has security implications. \n\nThe issue reported indicates that video files are being saved without an extension in the downloads folder by default. This could potentially lead to security vulnerabilities as users may unknowingly download and execute malicious files disguised as harmless videos. Without the proper file extension, users may be more susceptible to downloading and executing malware. Therefore, this issue should be disclosed in a CVE to bring awareness to the potential security risks associated with this behavior."
+  },
+  {
+    "ID": 9,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3992",
+    "IR_Create_Time": "2019-11-04T03:13:14Z",
+    "Desc": "Yes, this IR potentially relates to security as it mentions that trampoline code in the hypervisor could be accessible to the service VM. Trampoline code is often used in privilege escalation attacks, so if this code is accessible to the service VM, it could pose a security risk."
+  },
+  {
+    "ID": 10,
+    "IR": "https://github.com/stedolan/jq/issues/1936",
+    "IR_Create_Time": "2019-06-27T17:40:53Z",
+    "Desc": "Yes, this IR relates to security. The error message \"error: implicit declaration of function 'lgamma_r' is invalid in C\" indicates a potential code vulnerability related to improper use of a library function in C programming. This issue could potentially be exploited by an attacker to execute arbitrary code or obtain sensitive information, making it a security risk that should be disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 11,
+    "IR": "https://github.com/wixtoolset/issues/issues/5989",
+    "IR_Create_Time": "2019-05-01T07:16:40Z",
+    "Desc": "Yes, the issue report \"Logging password variables using APITAG managed bootstrapper\" likely has security implications. Storing and logging passwords in plain text can expose sensitive information and lead to security vulnerabilities. This issue could potentially lead to unauthorized access to systems or accounts if the password information is compromised. It should be investigated further and potentially disclosed in a CVE if necessary."
+  },
+  {
+    "ID": 12,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/4121",
+    "IR_Create_Time": "2019-11-14T08:23:57Z",
+    "Desc": "Yes, this IR may have security implications. A Machine Check Error can be an indication of a hardware or firmware issue that could potentially be exploited by an attacker to gain unauthorized access or cause a denial of service. Additionally, the mention of \"Page Size\" and \"APITAG NUMBERTAG\" suggests specific components or features that could be targeted for exploitation."
+  },
+  {
+    "ID": 13,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/357",
+    "IR_Create_Time": "2019-04-05T16:11:36Z",
+    "Desc": "Yes, this IR has security implications. Passing a computer User name to a Ghidra Server could potentially expose sensitive information about the user, such as login credentials or other personal information. This could lead to unauthorized access or compromise of sensitive data. It is important to avoid passing sensitive information like user names to servers to protect user privacy and security."
+  },
+  {
+    "ID": 14,
+    "IR": "https://github.com/mruby/mruby/issues/4809",
+    "IR_Create_Time": "2019-11-07T10:48:43Z",
+    "Desc": "Yes, this issue report likely has security implications. The segfault caused by an invalid read in str_decref could potentially be exploited by an attacker to cause a denial of service or possibly even execute arbitrary code. It is important to address and disclose this issue in a CVE to inform users and encourage prompt updates."
+  },
+  {
+    "ID": 15,
+    "IR": "https://github.com/xoops/xoopscore25/issues/683",
+    "IR_Create_Time": "2019-08-26T06:58:49Z",
+    "Desc": "Yes, this issue report likely has security implications. The mention of a \"Tab nabbing vulnerability\" on a specific API suggests that there may be a security flaw related to how the API handles tab navigation or opening new tabs, which could potentially be exploited by malicious actors. This issue could potentially lead to phishing attacks or unauthorized access to sensitive information."
+  },
+  {
+    "ID": 16,
+    "IR": "https://github.com/rhymix/rhymix/issues/1210",
+    "IR_Create_Time": "2019-10-16T12:13:18Z",
+    "Desc": "Yes, this issue report likely has security implications. The title \"5\" and the body content \"NUMBERTAG\" are not clear and may indicate potential vulnerabilities or security weaknesses that need to be investigated further. It is important to properly analyze and disclose any security issues found in this report."
+  },
+  {
+    "ID": 17,
+    "IR": "https://github.com/pocoproject/poco/issues/2784",
+    "IR_Create_Time": "2019-09-15T06:39:59Z",
+    "Desc": "Yes. This issue report is related to security because it is requesting an upgrade to a bundled library (expat) to address potential security vulnerabilities. Upgrading to a newer version of expat, which may contain security patches, is a common practice to ensure the software is secure against known vulnerabilities."
+  },
+  {
+    "ID": 18,
+    "IR": "https://github.com/weblateorg/weblate/issues/2928",
+    "IR_Create_Time": "2019-08-01T16:24:42Z",
+    "Desc": "Yes. This issue report relates to security because it mentions a problem with overlay source string information hiding history entries. This could potentially lead to a lack of transparency and accountability in the system, making it easier for malicious actors to cover their tracks and exploit vulnerabilities."
+  },
+  {
+    "ID": 19,
+    "IR": "https://github.com/yhirose/cpp-httplib/issues/164",
+    "IR_Create_Time": "2019-06-12T05:30:57Z",
+    "Desc": "Yes, this issue report may have security implications. \n\nThe title of the issue report \"5\" suggests that it is regarding a specific issue, and the body of the report mentions that \"Sockets should not be inheritable\". Inheritable sockets can pose a security risk as it could potentially allow unauthorized access or manipulation of network communication. This type of issue could result in unauthorized access to sensitive data or compromise the integrity of the network communication. Therefore, it is important to address and fix this issue to prevent any potential security vulnerabilities."
+  },
+  {
+    "ID": 20,
+    "IR": "https://github.com/hashicorp/packer/issues/8105",
+    "IR_Create_Time": "2019-09-15T11:09:39Z",
+    "Desc": "Yes, this issue should be disclosed in a CVE. The issue report mentions the use of EBS encryption on launch from an unencrypted AMI, which can potentially lead to sensitive data being exposed if the AMI is compromised. This is a security concern as it involves encryption and data protection practices."
+  },
+  {
+    "ID": 21,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/19912",
+    "IR_Create_Time": "2019-08-03T06:14:25Z",
+    "Desc": "Yes, this IR relates to security. The issue described indicates a potential vulnerability in the deployment process of a Solidity smart contract, where the initialization data returned exceeds a certain length (NUMBERTAG bytes), leading to a likely failure in deployment. This could potentially be exploited by malicious actors to disrupt the deployment process or cause unexpected behavior in the contract."
+  },
+  {
+    "ID": 22,
+    "IR": "https://github.com/portainer/portainer/issues/3139",
+    "IR_Create_Time": "2019-09-08T22:22:08Z",
+    "Desc": "Yes, this issue report has security implications. \nThe ability for a team leader to create a user when external authentication is configured could lead to unauthorized access to the system. This could potentially result in an attacker gaining access to sensitive information or performing unauthorized actions within the system."
+  },
+  {
+    "ID": 23,
+    "IR": "https://github.com/stedolan/jq/issues/1882",
+    "IR_Create_Time": "2019-04-04T13:14:54Z",
+    "Desc": "Yes, this issue report may have security implications. The unexpected syntax error in the fieldname parameter in PowerShell could potentially be exploited by an attacker to manipulate the behavior of the application or execute arbitrary code. This could lead to security vulnerabilities such as code injection or privilege escalation."
+  },
+  {
+    "ID": 24,
+    "IR": "https://github.com/mruby/mruby/issues/4689",
+    "IR_Create_Time": "2019-09-05T01:54:40Z",
+    "Desc": "Yes, this IR has security implications. The issue of allowing invalid identifiers to be used in unquoted symbol literals can lead to vulnerabilities such as injection attacks or privilege escalation. It can allow an attacker to manipulate symbols in unexpected ways, potentially leading to unauthorized access or data manipulation."
+  },
+  {
+    "ID": 25,
+    "IR": "https://github.com/adrienverge/openfortivpn/issues/459",
+    "IR_Create_Time": "2019-07-24T11:32:45Z",
+    "Desc": "Yes, this issue report has security implications. Ignoring the /etc/hosts file on Linux can lead to DNS spoofing attacks, where malicious actors can redirect network traffic to malicious servers by providing false DNS information. This can result in sensitive information being intercepted or compromised. Therefore, this issue should be disclosed in a CVE to inform users of the potential security risks."
+  },
+  {
+    "ID": 26,
+    "IR": "https://github.com/textpattern/textpattern/issues/1393",
+    "IR_Create_Time": "2019-02-25T12:53:29Z",
+    "Desc": "Yes, this issue report may have security implications. Stale textpack files could potentially be exploited by an attacker to inject malicious code or access sensitive information on the system. It is important to investigate and address this issue promptly to prevent any security breaches."
+  },
+  {
+    "ID": 27,
+    "IR": "https://github.com/portainer/portainer/issues/3311",
+    "IR_Create_Time": "2019-10-27T14:03:21Z",
+    "Desc": "Yes, this issue report appears to relate to security. The description mentions \"large buffer sizes\" which can lead to potential security vulnerabilities such as buffer overflow attacks or denial of service attacks. It is important to address and disclose this issue in a CVE for awareness and mitigation."
+  },
+  {
+    "ID": 28,
+    "IR": "https://github.com/opencv/opencv/issues/14906",
+    "IR_Create_Time": "2019-06-27T06:43:14Z",
+    "Desc": "Yes, this issue report potentially has security implications. A SIGSEGV (segmentation fault) error indicates that there may be a memory access violation or attempt to access restricted memory areas, which could potentially be abused by an attacker to execute arbitrary code or crash the application. In this case, the error occurs when loading a dynamic library on an ARM architecture, which could potentially be exploited by a malicious actor to gain unauthorized access or disrupt the system's operation."
+  },
+  {
+    "ID": 29,
+    "IR": "https://github.com/processing/processing/issues/5852",
+    "IR_Create_Time": "2019-05-03T10:39:24Z",
+    "Desc": "Yes, this issue report likely has security implications. The fact that an APITAG with APITAG has no effect could indicate a potential vulnerability in the API tagging system, which may impact the security and functionality of the system. It is important to thoroughly investigate and address this issue to ensure the security of the API."
+  },
+  {
+    "ID": 30,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/19654",
+    "IR_Create_Time": "2019-06-02T03:40:38Z",
+    "Desc": "Yes, this IR relates to security. The issue of failing to verify the smartcard daemon path can potentially lead to unauthorized access to sensitive information stored on the smartcard, posing a security risk to the system. This issue should be disclosed in CVE to alert users and prompt them to take necessary actions to address the vulnerability."
+  },
+  {
+    "ID": 31,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/1323",
+    "IR_Create_Time": "2019-12-07T21:37:18Z",
+    "Desc": "Yes, this issue report may involve security concerns. The use of varargs calling conventions on NUMBERTAG can potentially lead to buffer overflow vulnerabilities, which could be exploited by an attacker to execute arbitrary code or crash the application. This could allow an attacker to gain unauthorized access to sensitive information or disrupt the normal operation of the system."
+  },
+  {
+    "ID": 32,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/277",
+    "IR_Create_Time": "2019-03-27T18:48:42Z",
+    "Desc": "Yes, this IR relates to security. The issue of automatically opening PDB files from untrusted locations can potentially lead to the execution of malicious code or the exploitation of vulnerabilities in the software handling the files. This could result in unauthorized access to sensitive information or harm to the system. As such, it is important to address this issue to prevent potential security breaches."
+  },
+  {
+    "ID": 33,
+    "IR": "https://github.com/libyal/liblnk/issues/41",
+    "IR_Create_Time": "2019-10-07T19:37:27Z",
+    "Desc": "Yes, this IR relates to security. The issue reported is a heap buffer overflow in lnkinfo, which could potentially be exploited by an attacker to execute arbitrary code or crash the application. This type of vulnerability can lead to a range of security issues and should be disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 34,
+    "IR": "https://github.com/hashicorp/packer/issues/8157",
+    "IR_Create_Time": "2019-09-26T01:11:26Z",
+    "Desc": "Yes, this issue report relates to security. The lack of the APITAG in the manifest post processor for Amazon EBS could potentially lead to security vulnerabilities or misconfigurations in the API tags, which could expose sensitive data or open the system up to unauthorized access."
+  },
+  {
+    "ID": 35,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/20119",
+    "IR_Create_Time": "2019-09-24T10:34:41Z",
+    "Desc": "Yes, this IR may have security implications. The crash in APITAG could potentially be exploited by an attacker to cause a denial of service or execute arbitrary code, leading to a security vulnerability that should be disclosed in a CVE."
+  },
+  {
+    "ID": 36,
+    "IR": "https://github.com/opencv/opencv/issues/14363",
+    "IR_Create_Time": "2019-04-18T20:54:02Z",
+    "Desc": "Yes, this issue report may have security implications. \n\nThe issue described in the IR (Selective Search crashes on images with a certain width:height or height:width ratio) could potentially be exploited by an attacker to crash the application, leading to a denial of service or potentially allowing for further attacks. This type of vulnerability could also indicate underlying flaws in the application's handling of image data, which could open up other security risks. Therefore, it is important to assess and address this issue to prevent potential security vulnerabilities."
+  },
+  {
+    "ID": 37,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/19293",
+    "IR_Create_Time": "2019-03-18T23:43:19Z",
+    "Desc": "Yes, this issue report may have security implications. The presence of \"dirty Memory\" in the context of Geth (Go Ethereum) installation on APITAG NUMBERTAG could indicate a potential vulnerability that could be exploited by attackers to gain unauthorized access or manipulate the system. It is important to investigate and address this issue to prevent any security breaches."
+  },
+  {
+    "ID": 38,
+    "IR": "https://github.com/qpdf/qpdf/issues/390",
+    "IR_Create_Time": "2019-12-04T10:33:25Z",
+    "Desc": "Yes, this issue report may have security implications. The mention of an exit code for a show encryption request in an API suggests that there may be a potential vulnerability in the encryption functionality of the application. This could possibly be exploited by an attacker to bypass encryption or access sensitive data. Therefore, it is recommended to investigate further and potentially disclose this issue in a CVE."
+  },
+  {
+    "ID": 39,
+    "IR": "https://github.com/qpdf/qpdf/issues/333",
+    "IR_Create_Time": "2019-06-11T08:42:42Z",
+    "Desc": "Yes, this issue report has security implications. The issue described in the report indicates a potential vulnerability in the qpdf software related to encryption. If the APITAG is not provided in the encryption dictionary, it could potentially lead to a security breach or unauthorized access to encrypted content. This vulnerability should be disclosed in a Common Vulnerabilities and Exposures (CVE) report for users to be aware and take preventive measures."
+  },
+  {
+    "ID": 40,
+    "IR": "https://github.com/mz-automation/lib60870/issues/48",
+    "IR_Create_Time": "2019-06-12T10:40:13Z",
+    "Desc": "Yes, this issue report relates to security. The mention of a shared library can indicate a potential vulnerability in the code that is being shared and used by multiple applications. This could lead to security risks such as code injection, privilege escalation, or data exposure. It is important to investigate the specifics of this shared library issue to determine the severity and impact on security."
+  },
+  {
+    "ID": 41,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/884",
+    "IR_Create_Time": "2019-08-07T14:37:16Z",
+    "Desc": "Yes, this IR has potential security implications. The Python script causing the Ghidra process to become unresponsive could be a denial of service attack that could be exploited by malicious actors to disrupt the functionality of the Ghidra software. This vulnerability should be disclosed in a CVE to inform users and developers of the issue."
+  },
+  {
+    "ID": 42,
+    "IR": "https://github.com/portainer/portainer/issues/3378",
+    "IR_Create_Time": "2019-11-15T06:30:35Z",
+    "Desc": "Yes, this IR has security implications. Exposing the public IP address as an environment variable can potentially leak sensitive information and pose a security risk. Attackers could use this information to target specific servers or services, leading to potential security breaches."
+  },
+  {
+    "ID": 43,
+    "IR": "https://github.com/cyrusimap/cyrus-imapd/issues/2841",
+    "IR_Create_Time": "2019-08-04T14:13:20Z",
+    "Desc": "Yes, this issue report may have security implications. If Sieveshell is failing to create user script directories, it could potentially allow unauthorized access to these directories or lead to denial of service attacks. It is important to investigate further to determine the extent of the security risk."
+  },
+  {
+    "ID": 44,
+    "IR": "https://github.com/portainer/portainer/issues/3348",
+    "IR_Create_Time": "2019-11-08T04:26:44Z",
+    "Desc": "Yes, this IR relates to security. The issue of admin stacks showing as limited for RBAC users may indicate a vulnerability where unauthorized users are able to view or access certain administrative functions or data, potentially compromising the security of the system. This should be disclosed in a CVE to raise awareness and prompt a fix."
+  },
+  {
+    "ID": 45,
+    "IR": "https://github.com/portainer/portainer/issues/3234",
+    "IR_Create_Time": "2019-10-07T02:53:11Z",
+    "Desc": "Yes, this IR has security implications. The issue described involves a bypass in host filesystem management for regular users, which could potentially lead to unauthorized access or modification of sensitive files on the system. This could pose a security risk and should be addressed through a CVE disclosure."
+  },
+  {
+    "ID": 46,
+    "IR": "https://github.com/hashicorp/packer/issues/7309",
+    "IR_Create_Time": "2019-02-13T22:11:00Z",
+    "Desc": "Yes, this issue report has security implications. The fact that the ISO download fails if the hash changes but the URL remains the same could indicate a potential vulnerability in the system that allows for file tampering or manipulation. This could potentially lead to a supply chain attack or distribution of malicious software."
+  },
+  {
+    "ID": 47,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/19965",
+    "IR_Create_Time": "2019-08-15T00:13:24Z",
+    "Desc": "Yes, this issue report has security implications. The report mentions a panic occurring when concurrently accessing a map during the shutdown of the Rinkeby signer. This could potentially lead to a data corruption or unauthorized access issue, making it a security concern that should be disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 48,
+    "IR": "https://github.com/dolibarr/dolibarr/issues/12371",
+    "IR_Create_Time": "2019-11-07T10:04:38Z",
+    "Desc": "Yes, this issue report relates to security. The issue described allows a user to view the contacts of a third party without the necessary authorization, which can be a serious privacy violation. This could potentially lead to unauthorized access to sensitive personal information."
+  },
+  {
+    "ID": 49,
+    "IR": "https://github.com/hashicorp/packer/issues/8403",
+    "IR_Create_Time": "2019-11-22T08:49:35Z",
+    "Desc": "Yes, this IR relates to security. The issue of \"image_copy_regions should allow empty values\" could potentially lead to security vulnerabilities such as unauthorized access, data leaks, or other risks related to improper handling of image copying regions in the builder/alicloud system. This issue should be disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 50,
+    "IR": "https://github.com/opencv/opencv/issues/15636",
+    "IR_Create_Time": "2019-10-04T07:41:59Z",
+    "Desc": "Yes, this issue report may have security implications. The presence of uninitialized values can lead to vulnerabilities such as memory corruption or information disclosure, which could potentially be exploited by an attacker. It is important to address these issues to prevent security risks."
+  },
+  {
+    "ID": 51,
+    "IR": "https://github.com/mz-automation/lib60870/issues/58",
+    "IR_Create_Time": "2019-11-01T22:17:56Z",
+    "Desc": "Yes, this IR has security issues. The linker issues on APITAG could potentially lead to vulnerabilities such as injections or unauthorized access, which could be exploited by malicious actors. It is important to address these issues and disclose them in a CVE to help mitigate potential risks to users."
+  },
+  {
+    "ID": 52,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3454",
+    "IR_Create_Time": "2019-07-23T03:48:14Z",
+    "Desc": "Yes, this issue report has security implications. The mention of machine check status registers and general protection faults indicates potential vulnerabilities in the system that could be exploited by attackers. These types of issues should be disclosed in a CVE to inform users and developers and prompt them to take necessary actions to mitigate the risks."
+  },
+  {
+    "ID": 53,
+    "IR": "https://github.com/pkp/pkp-lib/issues/4846",
+    "IR_Create_Time": "2019-06-28T09:04:09Z",
+    "Desc": "Yes, this issue report may have security implications. The IR mentions a potential issue with the search form and keywords in the OJS system, which could potentially lead to security vulnerabilities such as SQL injection or cross-site scripting attacks. It is important to investigate further and address any potential security issues to prevent exploitation by malicious actors."
+  },
+  {
+    "ID": 54,
+    "IR": "https://github.com/pkp/pkp-lib/issues/4595",
+    "IR_Create_Time": "2019-03-13T08:20:57Z",
+    "Desc": "Yes, this issue report likely has security implications. The description of \"Session problems in multijournal installations with custom base_url's\" suggests potential vulnerabilities related to session management in Open Journal Systems (OJS), which could potentially lead to unauthorized access or session hijacking. This type of issue would likely be relevant for CVE disclosure."
+  },
+  {
+    "ID": 55,
+    "IR": "https://github.com/qpdf/qpdf/issues/347",
+    "IR_Create_Time": "2019-08-08T19:03:57Z",
+    "Desc": "Yes, this issue report may have security implications. \n\nWhen uncompressing and then compressing a PDF file, it could potentially lead to the loss of certain security features or settings within the document. This could leave the PDF file vulnerable to unauthorized access, modification, or exploitation. It is important to investigate further to determine the exact security implications of this issue and whether it warrants a CVE disclosure."
+  },
+  {
+    "ID": 56,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/192",
+    "IR_Create_Time": "2019-03-14T10:46:40Z",
+    "Desc": "Yes, this IR may have security implications. A function call graph hang could potentially indicate a denial of service vulnerability, where an attacker is able to cause the application to become unresponsive by triggering certain function calls in a specific sequence. This could be used to disrupt the availability of the application and potentially lead to other security issues."
+  },
+  {
+    "ID": 57,
+    "IR": "https://github.com/hashicorp/packer/issues/8446",
+    "IR_Create_Time": "2019-12-03T18:55:44Z",
+    "Desc": "Yes, this issue report may contain security issues. The use of Ansible in conjunction with Azure can pose potential security vulnerabilities, as misconfigurations or insecure coding practices could lead to unauthorized access or data breaches. Additionally, the mention of APITAG suggests that there may be issues related to API security that need to be addressed."
+  },
+  {
+    "ID": 58,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/6",
+    "IR_Create_Time": "2019-03-06T00:38:21Z",
+    "Desc": "Yes, this issue report \"RCE Through JDWP Debug Port\" likely has a security issue that needs to be disclosed in CVE. JDWP (Java Debug Wire Protocol) is a debugging tool that can be exploited by attackers to gain remote code execution (RCE) on a target system. This type of vulnerability can be a serious security threat and should be addressed promptly."
+  },
+  {
+    "ID": 59,
+    "IR": "https://github.com/yhirose/cpp-httplib/issues/151",
+    "IR_Create_Time": "2019-05-19T20:40:04Z",
+    "Desc": "Yes, this IR relates to security. The issue of client POST parameter values not being encoded properly can lead to potential security vulnerabilities such as SQL injection attacks or cross-site scripting (XSS) attacks. Proper encoding of input data is crucial in preventing these types of attacks and ensuring the security of the application."
+  },
+  {
+    "ID": 60,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/19159",
+    "IR_Create_Time": "2019-02-25T06:09:34Z",
+    "Desc": "Yes, this issue report may have security implications. The fact that the Geth sync is crashing could potentially indicate a vulnerability or bug that could be exploited by an attacker. This issue may need to be further investigated and potentially disclosed in a CVE if it is found to be a security issue."
+  },
+  {
+    "ID": 61,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/20420",
+    "IR_Create_Time": "2019-12-03T10:28:31Z",
+    "Desc": "Yes, this IR has security implications. The race condition in the freezer table could potentially lead to data corruption or unauthorized access to sensitive information, making it a security concern that should be disclosed in CVE."
+  },
+  {
+    "ID": 62,
+    "IR": "https://github.com/portainer/portainer/issues/3065",
+    "IR_Create_Time": "2019-07-31T16:19:57Z",
+    "Desc": "Yes, this IR potentially relates to security. The issue of hiding or de-emphasizing the internal login when APITAG is enabled could potentially lead to security vulnerabilities if not implemented properly. For example, if the internal login is not properly secured or obscured, it could potentially be exposed to unauthorized access. This issue should be further investigated to determine the extent of the security implications and if it warrants a CVE disclosure."
+  },
+  {
+    "ID": 63,
+    "IR": "https://github.com/wixtoolset/issues/issues/6011",
+    "IR_Create_Time": "2019-05-16T06:08:57Z",
+    "Desc": "Yes, this issue report relates to security. The repeated executable filename as the first argument in the APITAG execution could potentially lead to command injection vulnerabilities, allowing an attacker to execute arbitrary commands on the system. This could result in unauthorized access, data breaches, or other malicious activities."
+  },
+  {
+    "ID": 64,
+    "IR": "https://github.com/pocoproject/poco/issues/2831",
+    "IR_Create_Time": "2019-11-09T16:34:15Z",
+    "Desc": "Yes, this IR relates to security. The possible memory leak in the APITAG when adapter info cannot be gathered can potentially lead to denial of service attacks or other vulnerabilities if not properly addressed."
+  },
+  {
+    "ID": 65,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/2659",
+    "IR_Create_Time": "2019-03-01T07:38:37Z",
+    "Desc": "Yes, this IR may have security implications. The use of a command that fails could indicate potential vulnerabilities or issues with the system's functionality. The specific details provided do not give enough information to determine the exact security implications, but further investigation may be warranted."
+  },
+  {
+    "ID": 66,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/324",
+    "IR_Create_Time": "2019-04-03T19:13:54Z",
+    "Desc": "Yes. This issue report does have security implications. The issue is related to encrypting file data client-side before uploading it to the Ghidra Server, which is a security feature aimed at protecting sensitive data from unauthorized access during transmission. This is a good security practice as it helps to ensure that the data remains confidential and secure."
+  },
+  {
+    "ID": 67,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/20193",
+    "IR_Create_Time": "2019-10-22T06:40:02Z",
+    "Desc": "Yes, this issue report relates to security. The issue described in the report indicates a potential vulnerability related to transaction nonce manipulation, which could potentially lead to unauthorized transactions or replay attacks. This issue could allow an attacker to issue transactions with a higher nonce than the current nonce, bypassing the intended sequence and possibly leading to financial losses or other unauthorized actions."
+  },
+  {
+    "ID": 68,
+    "IR": "https://github.com/pkp/pkp-lib/issues/4626",
+    "IR_Create_Time": "2019-03-21T14:39:48Z",
+    "Desc": "Yes, this issue report relates to security. The upgrade problem in the OJS (Open Journal Systems) software could potentially leave the system vulnerable to security threats such as unpatched vulnerabilities or unsecure configurations. This type of issue could be exploited by attackers to gain unauthorized access or disrupt the system."
+  },
+  {
+    "ID": 69,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/4336",
+    "IR_Create_Time": "2020-01-07T06:39:10Z",
+    "Desc": "Yes, this issue report potentially has security implications. The mention of validating input in the 'deinit_postlaunched_vm' function suggests that there may be a vulnerability related to input validation, which could lead to security risks such as input injection or buffer overflow. It is important to address and fix this issue to prevent potential security breaches."
+  },
+  {
+    "ID": 70,
+    "IR": "https://github.com/opencv/opencv/issues/16293",
+    "IR_Create_Time": "2020-01-06T14:12:05Z",
+    "Desc": "Yes, this IR has security implications. The issue reported about broken APITAG detection in the Linux system could potentially lead to security vulnerabilities, such as unauthorized access or system manipulation through API calls. This could be exploited by attackers to gain unauthorized access to sensitive information or execute malicious code on the system. Therefore, it should be disclosed in a CVE for proper mitigation."
+  },
+  {
+    "ID": 71,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/4162",
+    "IR_Create_Time": "2019-11-29T01:38:12Z",
+    "Desc": "Yes, this issue report likely has security implications. The mention of a \"tsc_deadline read/write issue when lapic passthru\" suggests a potential vulnerability related to reading or writing the Time Stamp Counter deadline in the context of LAPIC (Local Advanced Programmable Interrupt Controller) passthru, which could potentially lead to a security exploit or attack.CVE may need to be assigned to address this issue."
+  },
+  {
+    "ID": 72,
+    "IR": "https://github.com/cyrusimap/cyrus-imapd/issues/2834",
+    "IR_Create_Time": "2019-07-24T04:04:42Z",
+    "Desc": "Yes, this issue report relates to security. The \"expose cyrusdb APITAG callback in mboxlist_find APIs\" potentially exposes a vulnerability in the cyrusdb API, which could lead to unauthorized access or manipulation of data stored in the mboxlist. This type of issue should be disclosed in a Common Vulnerabilities and Exposures (CVE) report to inform the community and enable proper mitigation measures to be taken."
+  },
+  {
+    "ID": 73,
+    "IR": "https://github.com/manageiq/manageiq/issues/18517",
+    "IR_Create_Time": "2019-03-04T17:31:30Z",
+    "Desc": "Yes, this IR relates to security. The issue of getting unauthorized and CORS issues while making a post call to an API can potentially expose sensitive data or allow for unauthorized access to the system, making it a security concern. This issue should be addressed and disclosed in a CVE."
+  },
+  {
+    "ID": 74,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/20050",
+    "IR_Create_Time": "2019-09-11T05:16:50Z",
+    "Desc": "Yes, this IR relates to security. \n\nThe issue report advises against using reserved JSON RPC error codes, which can pose a security risk as it can lead to potential vulnerabilities such as information disclosure, unauthorized access, or data manipulation. By using reserved error codes, it may inadvertently expose sensitive information or provide attackers with insights into the system's functionalities, making it easier for them to exploit any weaknesses. It is important to follow best practices and avoid using reserved error codes to mitigate security risks."
+  },
+  {
+    "ID": 75,
+    "IR": "https://github.com/elabftw/elabftw/issues/1280",
+    "IR_Create_Time": "2019-05-16T10:59:06Z",
+    "Desc": "Yes, this IR has security implications. The issue of not being able to make a user a sysadmin can impact the permissions and access control within a system, potentially leading to privilege escalation and unauthorized access to sensitive information or resources."
+  },
+  {
+    "ID": 76,
+    "IR": "https://github.com/opencv/opencv/issues/14335",
+    "IR_Create_Time": "2019-04-15T16:48:28Z",
+    "Desc": "Yes, this issue report may have security implications. This is because access violations in an API could potentially lead to unauthorized access, data leakage, or other security vulnerabilities if not addressed properly."
+  },
+  {
+    "ID": 77,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/906",
+    "IR_Create_Time": "2019-08-13T14:59:52Z",
+    "Desc": "Yes, the issue reported involves case insensitive importing of referenced PE libraries. This can lead to security vulnerabilities such as DLL hijacking, where a malicious DLL with a similar name but different case can be loaded instead of the intended library, leading to potential code execution or privilege escalation attacks. This issue should be disclosed in a Common Vulnerabilities and Exposures (CVE) entry for awareness and mitigation."
+  },
+  {
+    "ID": 78,
+    "IR": "https://github.com/anorov/cloudflare-scrape/issues/277",
+    "IR_Create_Time": "2019-07-31T15:41:12Z",
+    "Desc": "Yes, this IR potentially has security implications. The issue of being unable to scrape a specific URL could indicate a potential security vulnerability, such as a misconfiguration or access control issue that is preventing the proper scraping of the URL. This could potentially lead to data leakage or unauthorized access if not addressed."
+  },
+  {
+    "ID": 79,
+    "IR": "https://github.com/opencv/opencv/issues/15398",
+    "IR_Create_Time": "2019-08-27T10:25:17Z",
+    "Desc": "Yes, this issue report may have security implications. The error message indicates a failure in the cmake process for a project involving opencv_cudafilters, which suggests a potential vulnerability in the code related to CUDA processing in OpenCV. This could potentially lead to security issues such as memory corruption or denial of service attacks. It is important to investigate and address this issue promptly to prevent any security risks."
+  },
+  {
+    "ID": 80,
+    "IR": "https://github.com/sockjs/sockjs-node/issues/260",
+    "IR_Create_Time": "2019-10-26T17:19:06Z",
+    "Desc": "Yes, this issue report may have security implications. The uncaught error message indicates a compatibility issue with an API tag being used in an iframe on the main site. This could potentially lead to security vulnerabilities such as cross-site scripting (XSS) attacks if not properly addressed."
+  },
+  {
+    "ID": 81,
+    "IR": "https://github.com/adrienverge/openfortivpn/issues/526",
+    "IR_Create_Time": "2019-12-20T11:16:50Z",
+    "Desc": "Yes, setting a custom DNS server via a command flag can potentially introduce security vulnerabilities as it could allow an attacker to redirect traffic to malicious servers or intercept sensitive information. This issue could be used in a DNS hijacking attack, leading to potential data breaches or unauthorized access to sensitive information. This vulnerability should be reported and disclosed in a CVE."
+  },
+  {
+    "ID": 82,
+    "IR": "https://github.com/opencv/opencv/issues/15507",
+    "IR_Create_Time": "2019-09-12T07:36:16Z",
+    "Desc": "Yes, this IR has a security issue. The error message \"error: ( APITAG failed) APITAG in function APITAG\" indicates a failure in an API function, which could potentially lead to security vulnerabilities such as unauthorized access, data manipulation, or denial of service attacks. This issue should be investigated further and potentially disclosed in a CVE report."
+  },
+  {
+    "ID": 83,
+    "IR": "https://github.com/riot-os/riot/issues/11941",
+    "IR_Create_Time": "2019-07-31T09:16:01Z",
+    "Desc": "Yes, this issue report likely contains a security vulnerability that should be disclosed in a CVE. The mention of \"cpu/esp NUMBERTAG instabilities in multiheap memory management\" suggests a potential vulnerability related to memory management, which can often be exploited by attackers to execute arbitrary code or crash systems. This type of vulnerability can pose a significant security risk and should be addressed promptly to protect users."
+  },
+  {
+    "ID": 84,
+    "IR": "https://github.com/dolibarr/dolibarr/issues/12506",
+    "IR_Create_Time": "2019-11-25T14:34:37Z",
+    "Desc": "Yes, this IR does have security implications. The issue reported indicates that the APITAG system is unable to properly validate expeditions, which could potentially lead to unauthorized access or manipulation of expedition data. This vulnerability could be exploited by malicious actors to compromise the integrity and confidentiality of the system."
+  },
+  {
+    "ID": 85,
+    "IR": "https://github.com/pocoproject/poco/issues/2718",
+    "IR_Create_Time": "2019-06-12T12:09:58Z",
+    "Desc": "Yes, this IR does not appear to have any security issues. It is simply stating that there is an \"Invalid APITAG syntax,\" which is more likely a technical or development issue rather than a security vulnerability."
+  },
+  {
+    "ID": 86,
+    "IR": "https://github.com/grails/grails-core/issues/11310",
+    "IR_Create_Time": "2019-04-24T07:22:50Z",
+    "Desc": "Yes, this issue report does not have any security issues. The report mentions that the \"NUMBERTAG RC1 MENTIONTAG not working\", which seems to be a technical issue related to a specific feature not functioning properly. This does not pose any security risk."
+  },
+  {
+    "ID": 87,
+    "IR": "https://github.com/xoops/xoopscore25/issues/638",
+    "IR_Create_Time": "2019-02-08T03:06:43Z",
+    "Desc": "Yes, this IR may have security implications. The breaking in of the Criteria class due to a specific identifier quoting could potentially lead to unauthorized access or manipulation of data, compromising the security of the system."
+  },
+  {
+    "ID": 88,
+    "IR": "https://github.com/wixtoolset/issues/issues/6053",
+    "IR_Create_Time": "2019-07-17T18:08:29Z",
+    "Desc": "Yes, this IR relates to security. The issue reported involves the failure of the Wix Toolset Visual Studio extension to install due to an invalid certificate. This presents a potential security risk as it indicates that the extension may not be properly verified, opening up the possibility for malicious actors to exploit this vulnerability."
+  },
+  {
+    "ID": 89,
+    "IR": "https://github.com/ktorio/ktor/issues/1452",
+    "IR_Create_Time": "2019-11-20T14:38:54Z",
+    "Desc": "Yes, this IR relates to security. The mention of updating netty to mitigate a CVETAG suggests that there is a known vulnerability in the current version of netty that needs to be addressed to enhance security."
+  },
+  {
+    "ID": 90,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/2806",
+    "IR_Create_Time": "2019-03-18T17:18:20Z",
+    "Desc": "Yes, this issue report should be disclosed in CVE. The issue mentioned in the report is described as a \"minor issue in APITAG,\" which suggests that there may be a vulnerability or security weakness in an API tag related to the software. This could potentially lead to security risks if exploited by malicious actors, making it important for the issue to be disclosed and addressed."
+  },
+  {
+    "ID": 91,
+    "IR": "https://github.com/kubevirt/containerized-data-importer/issues/759",
+    "IR_Create_Time": "2019-04-22T21:48:17Z",
+    "Desc": "Yes, this IR relates to security. The issue report indicates that the CDI operator is using the cluster admin API, which can pose a security risk as it allows potentially unauthorized access and control over the cluster. This vulnerability should be disclosed in a CVE to alert users and prompt necessary actions to address this security issue."
+  },
+  {
+    "ID": 92,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3911",
+    "IR_Create_Time": "2019-10-23T10:21:45Z",
+    "Desc": "Yes, this IR relates to security. Adding a module parameter to disable a critical function such as hp work during vGPU busy could potentially lead to a security vulnerability if not properly implemented or managed. It is important to assess the potential impact on system security and functionality before proceeding with this change."
+  },
+  {
+    "ID": 93,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/20416",
+    "IR_Create_Time": "2019-12-02T10:17:10Z",
+    "Desc": "Yes, this IR may have security implications. The error message \"failed to initialize libusb: libusb: unknown error [code NUMBERTAG]\" indicates a failure to initialize the libusb library, which could potentially lead to vulnerabilities in the application utilizing libusb. It is important to investigate this issue further to determine if it exposes any security risks that may need to be addressed and disclosed in a Common Vulnerabilities and Exposures (CVE) entry."
+  },
+  {
+    "ID": 94,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3787",
+    "IR_Create_Time": "2019-10-09T05:41:03Z",
+    "Desc": "Yes, this issue report relates to security. The description \"Invalid pointer validation in APITAG\" suggests a potential vulnerability in the crashtool software that could lead to a security issue such as a crash, denial of service, or potentially even remote code execution. These types of vulnerabilities should be disclosed in a CVE to ensure users are aware of the risk and can take necessary precautions."
+  },
+  {
+    "ID": 95,
+    "IR": "https://github.com/lifei6671/mindoc/issues/500",
+    "IR_Create_Time": "2019-06-26T07:33:17Z",
+    "Desc": "Yes, this issue report may have security implications. The use of binary characters in the directory names could potentially lead to path traversal attacks or other vulnerabilities related to file handling and input validation. It is important to address this issue promptly to prevent any potential security risks."
+  },
+  {
+    "ID": 96,
+    "IR": "https://github.com/portainer/portainer/issues/3242",
+    "IR_Create_Time": "2019-10-08T08:25:54Z",
+    "Desc": "Yes, this issue report has security implications. \nThe error \"Could not locate dockerfile\" suggests that there may be a misconfiguration or vulnerability in the build process, potentially allowing malicious actors to manipulate or access sensitive information within the git repository. This could lead to unauthorized access or code execution on the Docker images being built, posing a security risk."
+  },
+  {
+    "ID": 97,
+    "IR": "https://github.com/pkp/pkp-lib/issues/5099",
+    "IR_Create_Time": "2019-09-26T14:34:34Z",
+    "Desc": "Yes, this IR could potentially have security implications. The error message \"operator does not exist\" could indicate a potential SQL injection vulnerability or a lack of proper input validation. If malicious input is provided through the OAI query, it could lead to unauthorized access or data manipulation in the Postgres database. It is recommended to investigate further to determine if this issue poses a security risk that needs to be publicly disclosed in a CVE."
+  },
+  {
+    "ID": 98,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3543",
+    "IR_Create_Time": "2019-08-06T08:07:50Z",
+    "Desc": "Yes, this issue report likely has security implications. The memory leak in the virtio i2c driver could potentially lead to a denial of service attack or other security vulnerabilities if not addressed promptly."
+  },
+  {
+    "ID": 99,
+    "IR": "https://github.com/mruby/mruby/issues/4267",
+    "IR_Create_Time": "2019-02-09T10:59:36Z",
+    "Desc": "Yes, this IR potentially has security implications. The use of hidden API functions could allow for unauthorized access or manipulation of sensitive data, leading to potential security vulnerabilities."
+  },
+  {
+    "ID": 100,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/6450",
+    "IR_Create_Time": "2019-08-28T16:20:46Z",
+    "Desc": "Yes, this issue report may have security implications. The display of \"tofu\" characters (represented by the squares in the text) could indicate a potential font rendering issue, which could potentially be exploited by an attacker for malicious purposes such as spoofing or phishing attacks. This should be investigated further and potentially disclosed in a CVE."
+  },
+  {
+    "ID": 101,
+    "IR": "https://github.com/elabftw/elabftw/issues/1292",
+    "IR_Create_Time": "2019-05-22T15:59:36Z",
+    "Desc": "Yes, this IR titled \"5\" with the body \"Timestamping installation\" could potentially involve security issues. Timestamping is often used in security protocols to ensure the integrity and authenticity of data. If there are vulnerabilities in the timestamping installation process, it could lead to threats such as timestamp manipulation, unauthorized access, or data tampering. As a result, these security issues should be disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 102,
+    "IR": "https://github.com/axiomatic-systems/bento4/issues/411",
+    "IR_Create_Time": "2019-08-08T09:55:20Z",
+    "Desc": "Yes, the issue report \"sgpd and sbgp missing in encrypted segments generated by mp4encrypt\" potentially has security implications. This issue indicates that certain essential parameters (sgpd and sbgp) are missing in encrypted segments generated by the mp4encrypt tool, which could result in a lack of adequate protection for the encrypted content. This could make the encrypted content more vulnerable to unauthorized access or tampering."
+  },
+  {
+    "ID": 103,
+    "IR": "https://github.com/grails/grails-core/issues/11386",
+    "IR_Create_Time": "2019-08-12T05:50:00Z",
+    "Desc": "Yes, this issue report relates to security. The upgrade default URL '/' not working in the API can potentially leave the system vulnerable to unauthorized access or other security threats."
+  },
+  {
+    "ID": 104,
+    "IR": "https://github.com/hashicorp/packer/issues/8533",
+    "IR_Create_Time": "2019-12-23T07:14:59Z",
+    "Desc": "Yes, this issue report appears to have a security issue related to a panic error in the code. The error message indicates a potential type conversion issue, which could lead to a vulnerability such as a data corruption or possible exploitation of the application. This issue may be eligible for disclosure in CVE."
+  },
+  {
+    "ID": 105,
+    "IR": "https://github.com/hashicorp/packer/issues/8534",
+    "IR_Create_Time": "2019-12-23T07:34:36Z",
+    "Desc": "Yes, this IR relates to security. The specified issue in Packer could potentially lead to a situation where the security group is not properly identified, which could result in unauthorized access or security vulnerabilities within the system. This could be a potential security issue that needs to be disclosed in CVE."
+  },
+  {
+    "ID": 106,
+    "IR": "https://github.com/ktorio/ktor/issues/1506",
+    "IR_Create_Time": "2019-12-17T13:53:33Z",
+    "Desc": "Yes, this issue report relates to security because cookies are used for maintaining user sessions and authentication in web applications. Failure to log cookies in the client logging system could lead to potential security risks such as session hijacking or unauthorized access to sensitive information. This could potentially be a CVE-worthy issue if not addressed promptly."
+  },
+  {
+    "ID": 107,
+    "IR": "https://github.com/hashicorp/packer/issues/8053",
+    "IR_Create_Time": "2019-08-30T09:55:00Z",
+    "Desc": "Yes, this issue report has potential security implications. The issue described could potentially indicate a vulnerability in the Outscale provider's SSH implementation, which could be exploited by an attacker to gain unauthorized access to systems or data. This issue may need to be disclosed in a CVE to alert users and prompt them to take necessary actions to mitigate the risk."
+  },
+  {
+    "ID": 108,
+    "IR": "https://github.com/portainer/portainer/issues/2686",
+    "IR_Create_Time": "2019-02-07T14:45:12Z",
+    "Desc": "Yes, this IR has security implications. The inability to delete tags in the registry manager could potentially allow unauthorized users to manipulate or modify sensitive data in the registry, leading to security breaches or unauthorized access to critical system information."
+  },
+  {
+    "ID": 109,
+    "IR": "https://github.com/pkp/pkp-lib/issues/4590",
+    "IR_Create_Time": "2019-03-12T14:13:21Z",
+    "Desc": "Yes, this IR has security implications. The lack of parameter substitution in email after selecting another template can expose sensitive information or lead to injection attacks if user input is not properly sanitized. It could potentially be exploited by an attacker to trick the system into processing malicious code or displaying sensitive data. This vulnerability should be disclosed in a CVE to alert the community and prompt a fix."
+  },
+  {
+    "ID": 110,
+    "IR": "https://github.com/mruby/mruby/issues/4807",
+    "IR_Create_Time": "2019-11-07T10:15:54Z",
+    "Desc": "Yes, this issue report appears to have security implications. The segfault due to an invalid read in the function `str_init_shared` suggests a memory corruption vulnerability, which could potentially be exploited by an attacker to execute arbitrary code or crash the application. This type of vulnerability should be addressed and disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 111,
+    "IR": "https://github.com/portainer/portainer/issues/3496",
+    "IR_Create_Time": "2020-01-07T01:35:53Z",
+    "Desc": "Yes, this issue report relates to security. \n\nThe issue of \"Error in stack file via api produces no error in api output\" indicates a potential vulnerability in the API where errors in the stack file are not properly handled or displayed in the API output. This could be exploited by an attacker to manipulate the system or extract sensitive information. It is important to address this issue and disclose it in a CVE to raise awareness and protect users from potential risks."
+  },
+  {
+    "ID": 112,
+    "IR": "https://github.com/anorov/cloudflare-scrape/issues/211",
+    "IR_Create_Time": "2019-03-28T12:46:29Z",
+    "Desc": "Yes, this IR relates to security. The problem with scrapy if a cloudflare challenge occurs in the middle of crawling could potentially expose vulnerabilities in the crawling process and may allow for unauthorized access to sensitive information. This issue could lead to a potential security breach if not addressed properly."
+  },
+  {
+    "ID": 113,
+    "IR": "https://github.com/pocoproject/poco/issues/2631",
+    "IR_Create_Time": "2019-03-06T19:18:14Z",
+    "Desc": "Yes, this IR has security implications. \n\nThe issue reported involves a specific scenario where Poco Websocket is crashing in APITAG API after applying a deny ipfw rule. This type of crash can potentially be exploited by malicious actors to disrupt services, launch denial of service attacks, or even potentially gain unauthorized access to the system. As such, it is important to investigate and address this issue promptly to ensure the security and stability of the system."
+  },
+  {
+    "ID": 114,
+    "IR": "https://github.com/mruby/mruby/issues/4833",
+    "IR_Create_Time": "2019-11-20T05:52:16Z",
+    "Desc": "Yes, this issue report may have security implications. A coredump occurring when using the \"ensure\" statement in an APITAG script could indicate a potential vulnerability that may be exploited by an attacker. This could lead to denial of service or other security risks."
+  },
+  {
+    "ID": 115,
+    "IR": "https://github.com/opencv/opencv/issues/14197",
+    "IR_Create_Time": "2019-03-31T01:56:15Z",
+    "Desc": "Yes, this IR may have security implications. The mention of \"Failed to APITAG NUMBERTAG with APITAG Contrib and CUDA NUMBERTAG\" suggests that there may be vulnerabilities in the APIs being used, which could potentially be exploited by malicious actors. It is important to investigate further to determine if any sensitive data or system functionality is at risk."
+  },
+  {
+    "ID": 116,
+    "IR": "https://github.com/hacklcx/hfish/issues/25",
+    "IR_Create_Time": "2019-09-04T08:32:42Z",
+    "Desc": "Yes, this issue report may have security implications. The description \"\u540e\u53f0\u8bb0\u5f55\u547d\u4ee4\u9519\u8bef\" translates to \"Backend recording command error,\" suggesting that there may be a vulnerability in the backend system that could be exploited by an attacker. This type of error could potentially lead to unauthorized access, data leakage, or other security breaches."
+  },
+  {
+    "ID": 117,
+    "IR": "https://github.com/yhirose/cpp-httplib/issues/269",
+    "IR_Create_Time": "2019-11-26T05:45:31Z",
+    "Desc": "Yes, this issue report does not have security issues that need to be disclosed in CVE. The issue \"'inet_pton': identifier not found\" is related to a missing identifier in a program, which is more likely to be a coding error than a security vulnerability."
+  },
+  {
+    "ID": 118,
+    "IR": "https://github.com/opencv/opencv/issues/14423",
+    "IR_Create_Time": "2019-04-25T14:39:22Z",
+    "Desc": "Yes, this IR has security issues. The issue report contains sensitive information such as the title of the issue, number of points in ERRORTAG and APITAG, which could potentially be used by malicious actors to exploit the system. This information should be disclosed in a CVE to alert users and developers of the potential risks."
+  },
+  {
+    "ID": 119,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3987",
+    "IR_Create_Time": "2019-11-01T05:42:05Z",
+    "Desc": "Yes, this IR has security implications. The lack of bounds specified for the array \"platform_clos_array\" could lead to buffer overflow vulnerabilities, allowing an attacker to overwrite adjacent memory locations and potentially execute malicious code. It is important to address this issue to prevent potential security breaches."
+  },
+  {
+    "ID": 120,
+    "IR": "https://github.com/ktorio/ktor/issues/1151",
+    "IR_Create_Time": "2019-05-24T11:21:45Z",
+    "Desc": "Yes, this IR relates to security. The issue of \"Duplicate Content Length header on less equal then Android NUMBERTAG\" could potentially lead to a security vulnerability, such as a potential for a content spoofing attack or bypassing content length validation checks. This should be disclosed in a CVE to ensure that users are aware of the issue and can take appropriate actions to mitigate any potential risks."
+  },
+  {
+    "ID": 121,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/672",
+    "IR_Create_Time": "2019-06-11T00:07:17Z",
+    "Desc": "Yes, this issue report does not have any security issues. It is related to ensuring that proper copyright headers are included in the codebase, which is a matter of compliance and best practices, rather than a security concern."
+  },
+  {
+    "ID": 122,
+    "IR": "https://github.com/znc/znc/issues/1704",
+    "IR_Create_Time": "2020-01-12T04:47:11Z",
+    "Desc": "Yes, this issue report contains a security issue. \n\nThe limitation on password length can make it easier for attackers to guess or brute force the password. Password length is a crucial factor in determining the strength of a password and limiting it to a specific number of characters can weaken the overall security of the system. This limitation should be addressed to ensure that users can create strong, complex passwords for better protection of their accounts."
+  },
+  {
+    "ID": 123,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/20250",
+    "IR_Create_Time": "2019-11-07T07:07:53Z",
+    "Desc": "Yes, this IR relates to security. The issue report is requesting information on how to access internal transactions, which could potentially expose sensitive data or information that should not be accessible to unauthorized users. This could lead to security breaches and data privacy violations."
+  },
+  {
+    "ID": 124,
+    "IR": "https://github.com/opencv/opencv/issues/15617",
+    "IR_Create_Time": "2019-10-01T09:40:02Z",
+    "Desc": "Yes, this IR potentially has security implications. The issue of generating pbtxt files that lead to incorrect results could potentially be exploited by malicious actors to manipulate or compromise the results of the TensorFlow models, impacting the security and integrity of the system. This vulnerability should be disclosed in CVE for further investigation and mitigation."
+  },
+  {
+    "ID": 125,
+    "IR": "https://github.com/stedolan/jq/issues/1928",
+    "IR_Create_Time": "2019-06-17T16:04:45Z",
+    "Desc": "Yes, this issue report could potentially have security implications. The details provided, such as \"Variable assignment with arithmetic,\" suggest that there may be vulnerabilities related to insecure handling of variables and potential exploitation through arithmetic operations. This could lead to security vulnerabilities such as buffer overflows or injection attacks. Therefore, it is important for further investigation and potential disclosure in a CVE."
+  },
+  {
+    "ID": 126,
+    "IR": "https://github.com/weblateorg/weblate/issues/2576",
+    "IR_Create_Time": "2019-02-25T16:10:19Z",
+    "Desc": "Yes, this IR potentially has security implications. Upgrading NUMBERTAG using docker images could expose vulnerabilities in the system, especially if the upgrade process is not secure or if the docker images themselves contain security flaws. This could potentially lead to unauthorized access, data breaches, or other security incidents. Therefore, it is important to investigate and address any security issues related to this upgrade process."
+  },
+  {
+    "ID": 127,
+    "IR": "https://github.com/hashicorp/packer/issues/8000",
+    "IR_Create_Time": "2019-08-16T03:29:19Z",
+    "Desc": "Yes, this IR has security issues. The missing fileversion and certificate on packer.exe can make it difficult to verify the authenticity and integrity of the file, potentially leaving it vulnerable to tampering and misuse. This could lead to security risks such as malware injection or unauthorized access."
+  },
+  {
+    "ID": 128,
+    "IR": "https://github.com/opencv/opencv/issues/15410",
+    "IR_Create_Time": "2019-08-28T23:18:06Z",
+    "Desc": "Yes, this IR relates to security. The issue of \"Segfault in cv::divide\" indicates a segmentation fault in the cv::divide function of the OpenCV library. Segmentation faults can be exploited by attackers to crash a program or potentially execute arbitrary code, making it a security vulnerability that should be disclosed in a CVE."
+  },
+  {
+    "ID": 129,
+    "IR": "https://github.com/dolibarr/dolibarr/issues/11989",
+    "IR_Create_Time": "2019-09-30T14:30:51Z",
+    "Desc": "Yes, this issue report does contain a security issue. The error \"Call to undefined function easter_date\" indicates that the application is trying to call a function that does not exist, which could potentially lead to a vulnerability such as a denial of service (DoS) attack or remote code execution. As such, this issue should be disclosed in a CVE."
+  },
+  {
+    "ID": 130,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/1381",
+    "IR_Create_Time": "2019-12-24T01:22:07Z",
+    "Desc": "Yes, this issue report appears to have security issues. The details provided are very vague and do not give any specific information about the potential vulnerabilities in the API tags. This lack of detail may indicate an attempt to hide or downplay security concerns, which is a common tactic used by malicious actors. This issue should be further investigated and potentially disclosed in a CVE."
+  },
+  {
+    "ID": 131,
+    "IR": "https://github.com/opencv/opencv/issues/16176",
+    "IR_Create_Time": "2019-12-16T18:50:58Z",
+    "Desc": "Yes, this IR has security issues. The information provided in the IR seems to contain sensitive tags like \"APITAG\" and \"PATHTAG\", which could potentially reveal API endpoints or other confidential information that could be exploited by attackers. It is important to properly handle and redact such sensitive information to prevent security breaches."
+  },
+  {
+    "ID": 132,
+    "IR": "https://github.com/pocoproject/poco/issues/2634",
+    "IR_Create_Time": "2019-03-08T07:41:19Z",
+    "Desc": "Yes, this IR relates to security. The data race in APITAG can potentially lead to a security vulnerability as it may allow unauthorized access or manipulation of data, leading to potential security breaches."
+  },
+  {
+    "ID": 133,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3032",
+    "IR_Create_Time": "2019-04-28T02:51:10Z",
+    "Desc": "Yes, this issue has security implications. The report mentions dumping stack memory after using mempool for ACRN VHM, which could potentially lead to information disclosure or a possible exploitation of the memory vulnerability. This vulnerability should be disclosed in a CVE to alert users and organizations about the potential risks."
+  },
+  {
+    "ID": 134,
+    "IR": "https://github.com/hashicorp/packer/issues/7719",
+    "IR_Create_Time": "2019-06-06T04:22:25Z",
+    "Desc": "Yes, this IR may have security issues. The issue of the Packer NUMBERTAG getting stuck on \"Waiting for AMI to become ready...\" could indicate a potential vulnerability in the system, possibly related to insufficient permissions or misconfigurations in the AMI creation process. This could potentially lead to security risks if the AMIs are not properly secured or if there are vulnerabilities in the image."
+  },
+  {
+    "ID": 135,
+    "IR": "https://github.com/pkp/pkp-lib/issues/5032",
+    "IR_Create_Time": "2019-08-30T13:44:05Z",
+    "Desc": "Yes, this IR has a security issue. The issue of referring to obsolete/removed APITAG settings can potentially lead to vulnerabilities or security risks in the system. It may expose the application to potential attacks or misuse if the settings are not updated or properly configured. Therefore, it is important to address this issue and update the API settings to mitigate any security risks."
+  },
+  {
+    "ID": 136,
+    "IR": "https://github.com/mz-automation/lib60870/issues/40",
+    "IR_Create_Time": "2019-03-07T18:35:12Z",
+    "Desc": "Yes, this IR has a security issue related to a possible dangling lock. A dangling lock occurs when a lock is not properly released, leaving the resource vulnerable to unauthorized access or manipulation. This can lead to potential security vulnerabilities such as race conditions or deadlocks, making it important to address and disclose in a CVE report."
+  },
+  {
+    "ID": 137,
+    "IR": "https://github.com/daylightstudio/fuel-cms/issues/538",
+    "IR_Create_Time": "2019-08-20T08:38:20Z",
+    "Desc": "Yes, this IR may have security implications. The presence of cross-site scripting (XSS) in the dashboard indicates a vulnerability that could be exploited by malicious actors to execute arbitrary code on the user's browser, potentially leading to data theft or further compromise of the system. This issue should be disclosed in a Common Vulnerabilities and Exposures (CVE) report for proper mitigation."
+  },
+  {
+    "ID": 138,
+    "IR": "https://github.com/sile/libflate/issues/33",
+    "IR_Create_Time": "2019-06-20T13:36:39Z",
+    "Desc": "Yes, this issue report does have security implications. The report indicates that the decoder may expose contents of uninitialized memory in the output. This could potentially lead to information disclosure and compromise the security of the system."
+  },
+  {
+    "ID": 139,
+    "IR": "https://github.com/daylightstudio/fuel-cms/issues/528",
+    "IR_Create_Time": "2019-04-26T09:14:30Z",
+    "Desc": "Yes, this issue report should be disclosed in CVE. The CSRF vulnerability in FUELCMS that allows unauthorized users to add or delete admin users poses a significant security risk as it could lead to attackers gaining administrative access to the system and potentially compromising sensitive data. This vulnerability could also be used for privilege escalation attacks."
+  },
+  {
+    "ID": 140,
+    "IR": "https://github.com/riot-os/riot/issues/12273",
+    "IR_Create_Time": "2019-09-19T09:39:35Z",
+    "Desc": "Yes, this IR may have security implications. The mention of having usable VID/PIDs for standard and prototype situations could potentially lead to unauthorized access or malicious activity if not properly managed or protected. Having identifiable and predictable values for these identifiers could make it easier for attackers to exploit vulnerabilities. It would be important to assess the specific use case and implementation to determine the severity of the security risk."
+  },
+  {
+    "ID": 141,
+    "IR": "https://github.com/opencv/opencv/issues/15552",
+    "IR_Create_Time": "2019-09-20T11:24:56Z",
+    "Desc": "Yes, this issue report has a security issue.\nThis issue relates to security because it appears to describe a vulnerability related to backwards compatibility with an API tag and a specific number tag, which can lead to a scope issue with the declaration of 'CV_' potentially exposing sensitive data or functionality."
+  },
+  {
+    "ID": 142,
+    "IR": "https://github.com/keystonejs/keystone/issues/1970",
+    "IR_Create_Time": "2019-11-18T05:15:21Z",
+    "Desc": "Yes, this issue report may have security implications. The issue described could potentially expose sensitive user information if session data is lost and the user is constantly redirected to the login page, which could be exploited by a malicious actor. Additionally, the behavior of constantly being redirected could indicate a potential vulnerability in the authentication mechanism, which could be exploited for unauthorized access to the system."
+  },
+  {
+    "ID": 143,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3537",
+    "IR_Create_Time": "2019-08-05T08:18:38Z",
+    "Desc": "Yes, this issue report has a security issue. The kernel crashing while booting APITAG through the kernel image if the Video IGD Aperture Size is set to NUMBERTAG could potentially be exploited by an attacker to cause a denial of service or even execute arbitrary code on the system. This type of vulnerability could lead to a CVE being assigned for further investigation and mitigation."
+  },
+  {
+    "ID": 144,
+    "IR": "https://github.com/pkp/pkp-lib/issues/4726",
+    "IR_Create_Time": "2019-05-06T21:41:03Z",
+    "Desc": "Yes, this issue report may have security implications. The fact that the event log is listing an \"APITAG\" without replacing it with the appropriate OJS submission number could indicate a potential vulnerability in the system's handling of sensitive data or API requests. This could potentially lead to unauthorized access or manipulation of submissions data."
+  },
+  {
+    "ID": 145,
+    "IR": "https://github.com/phpmussel/phpmussel/issues/202",
+    "IR_Create_Time": "2019-08-08T11:48:48Z",
+    "Desc": "Yes, this IR has a security issue. The information provided in the IR includes a potential vulnerability that could be exploited if disclosed publicly. The \"PATHTAG\" in the body of the IR indicates a possible path traversal vulnerability, which could allow an attacker to access sensitive files on the system. This information should be further investigated and disclosed in a CVE to alert users and vendors of the potential risk."
+  },
+  {
+    "ID": 146,
+    "IR": "https://github.com/manageiq/manageiq/issues/19674",
+    "IR_Create_Time": "2019-12-20T19:13:29Z",
+    "Desc": "Yes, this IR may have a security issue as it indicates an \"uninitialized constant\" error, which could potentially lead to a vulnerability if exploited by an attacker. This type of error could be indicative of a failure to properly handle input or securely implement a feature, making it crucial to investigate further and potentially disclose in a CVE."
+  },
+  {
+    "ID": 147,
+    "IR": "https://github.com/opencv/opencv/issues/15766",
+    "IR_Create_Time": "2019-10-23T19:08:29Z",
+    "Desc": "Yes, this IR may be related to security. The issue of a missing custom layer in an API could potentially lead to security vulnerabilities, such as improper access control or data exposure. This could allow attackers to exploit the API and gain unauthorized access to sensitive information."
+  },
+  {
+    "ID": 148,
+    "IR": "https://github.com/opencv/opencv/issues/14055",
+    "IR_Create_Time": "2019-03-14T14:28:54Z",
+    "Desc": "Yes, this IR may have security implications. The bug in the makefile that causes an incorrect system name comparison could potentially lead to a vulnerability that attackers could exploit to manipulate system behaviors or access sensitive information. It is important to address this issue promptly to prevent any security risks."
+  },
+  {
+    "ID": 149,
+    "IR": "https://github.com/pypiserver/pypiserver/issues/280",
+    "IR_Create_Time": "2019-10-28T18:25:31Z",
+    "Desc": "Yes, this issue may have security implications. The \"permission denied\" error when using Docker could indicate a potential privilege escalation or unauthorized access issue, which may need to be disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 150,
+    "IR": "https://github.com/weblateorg/weblate/issues/2547",
+    "IR_Create_Time": "2019-02-08T13:47:06Z",
+    "Desc": "Yes, this issue report relates to security. The incorrect trailing stop checks in PHP source files can potentially lead to security vulnerabilities such as injection attacks or code exploitation. It is important to fix this issue to prevent any security risks."
+  },
+  {
+    "ID": 151,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/807",
+    "IR_Create_Time": "2019-07-18T19:21:59Z",
+    "Desc": "Yes, this issue report may have security implications. The lack of loading default symbols in AVR GCC can potentially lead to security vulnerabilities such as buffer overflows or pointer manipulation. It is important to investigate further and determine if this issue exposes the system to potential security risks."
+  },
+  {
+    "ID": 152,
+    "IR": "https://github.com/riot-os/riot/issues/11515",
+    "IR_Create_Time": "2019-05-13T12:33:20Z",
+    "Desc": "Yes, this issue report seems to have security implications. The inability to send IP UDP packets over an ethernet interface when a specific module is used could potentially lead to network communication disruptions or vulnerabilities. It could be exploited by an attacker to disrupt network connectivity or launch a denial-of-service attack. Thus, this issue should be disclosed in a CVE to raise awareness and prompt necessary actions for mitigation."
+  },
+  {
+    "ID": 153,
+    "IR": "https://github.com/opencv/opencv/issues/14399",
+    "IR_Create_Time": "2019-04-23T05:25:19Z",
+    "Desc": "Yes, this issue report may have security implications. The error message \"undefined reference to `carotene_o4t`\" indicates a potential vulnerability in the code, possibly a missing or incorrect reference to a critical component like a function or variable. This could lead to unexpected behavior or even exploitation by an attacker. Therefore, it should be investigated further and if confirmed as a security issue, it should be disclosed in a CVE."
+  },
+  {
+    "ID": 154,
+    "IR": "https://github.com/opencv/opencv/issues/15534",
+    "IR_Create_Time": "2019-09-18T07:25:58Z",
+    "Desc": "Yes, this IR may have security issues. The error message indicates a problem with the APITAG function, which could potentially be exploited by an attacker. It is important to investigate further to determine the specific security implications and whether they warrant disclosure in a CVE."
+  },
+  {
+    "ID": 155,
+    "IR": "https://github.com/sile/libflate/issues/31",
+    "IR_Create_Time": "2019-06-19T22:59:06Z",
+    "Desc": "Yes, this issue report may have security implications. The phrase \"APITAG is unsound\" could indicate that there are vulnerabilities or weaknesses in an API implementation, potentially leading to security risks such as unauthorized access, data breaches, or other malicious activities. Therefore, it is important to investigate further and potentially disclose any identified security issues in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 156,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/582",
+    "IR_Create_Time": "2019-05-09T22:55:17Z",
+    "Desc": "Yes, this IR could potentially have security implications. By restoring directory authentication in Ghidra Server, there may be vulnerabilities introduced if proper security measures are not implemented. This could potentially lead to unauthorized access to sensitive data or resources within the server."
+  },
+  {
+    "ID": 157,
+    "IR": "https://github.com/ktorio/ktor/issues/1294",
+    "IR_Create_Time": "2019-08-23T00:31:17Z",
+    "Desc": "Yes, this issue report has security implications. \n\nThe IR mentions that the KTOR client CIO engine sends a bad Host http header that includes the port number. This could potentially introduce a security vulnerability known as \"Host header injection\", which can be exploited by an attacker to perform various attacks such as server-side request forgery (SSRF), cache poisoning, and more.\n\nThus, the issue described in the IR is related to security and should be addressed to prevent potential exploitation."
+  },
+  {
+    "ID": 158,
+    "IR": "https://github.com/yhirose/cpp-httplib/issues/154",
+    "IR_Create_Time": "2019-05-25T17:37:18Z",
+    "Desc": "Yes, this issue report relates to security. The support of SSL client certificates can introduce security vulnerabilities if not properly implemented, such as certificate misuse, man-in-the-middle attacks, and unauthorized access to sensitive information. Therefore, it is important to disclose any potential security issues related to this feature in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 159,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/485",
+    "IR_Create_Time": "2019-04-21T14:26:05Z",
+    "Desc": "Yes, this issue report may have security implications. The mention of \"Win NUMBERTAG function calls are wrong\" suggests that there may be incorrect or insecure handling of function calls related to Windows NUMBERTAG functionality. This could potentially lead to exploitable vulnerabilities and should be investigated further to determine if it warrants a CVE disclosure."
+  },
+  {
+    "ID": 160,
+    "IR": "https://github.com/yhirose/cpp-httplib/issues/330",
+    "IR_Create_Time": "2020-01-14T00:23:18Z",
+    "Desc": "Yes, this issue report relates to security. The lack of parameter support in an API endpoint can potentially lead to security vulnerabilities such as injection attacks or unauthorized access to sensitive data. It is important for API endpoints to have proper parameter support to ensure secure and reliable communication."
+  },
+  {
+    "ID": 161,
+    "IR": "https://github.com/opencv/opencv/issues/15413",
+    "IR_Create_Time": "2019-08-29T00:14:47Z",
+    "Desc": "Yes, this IR likely has security issues. The error message \"invalid instruction\" may indicate a potential vulnerability in the application, such as a buffer overflow or code injection issue. It relates to security because it suggests that there may be a flaw in the software that could be exploited by an attacker."
+  },
+  {
+    "ID": 162,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/19388",
+    "IR_Create_Time": "2019-04-03T21:52:02Z",
+    "Desc": "Yes, this issue may have security implications. The invalid import in handler.go could potentially lead to vulnerabilities such as insecure dependencies or code injection if not addressed properly. It is important to investigate and remediate this issue to ensure the security of the application."
+  },
+  {
+    "ID": 163,
+    "IR": "https://github.com/hashicorp/packer/issues/7422",
+    "IR_Create_Time": "2019-03-19T01:49:46Z",
+    "Desc": "Yes, this IR may have security implications as it appears that the APITAG ISO packer build process on Linux Redhat is getting stuck, potentially indicating a denial of service or resource exhaustion issue. Further investigation is needed to determine the root cause and potential security vulnerabilities in this process."
+  },
+  {
+    "ID": 164,
+    "IR": "https://github.com/antswordproject/antsword/issues/221",
+    "IR_Create_Time": "2019-10-11T13:16:18Z",
+    "Desc": "Yes, this issue report has security implications. The error message \"IP is not in the cert's list\" suggests that there may be a problem with the SSL certificate configuration, which could potentially lead to security vulnerabilities such as man-in-the-middle attacks or unauthorized access. This issue should be addressed and disclosed in a CVE if necessary."
+  },
+  {
+    "ID": 165,
+    "IR": "https://github.com/grails/grails-core/issues/11451",
+    "IR_Create_Time": "2019-12-12T20:14:02Z",
+    "Desc": "Yes, this IR potentially has security implications. \n\nThe issue report mentions that Grails NUMBERTAG API mixes params from multiple requests, which could indicate a potential vulnerability where sensitive information from one request could be leaked or manipulated by another request. This could lead to security breaches such as unauthorized access or data manipulation. \n\nTherefore, this issue should be thoroughly investigated and if confirmed, could be disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 166,
+    "IR": "https://github.com/anchore/anchore-engine/issues/238",
+    "IR_Create_Time": "2019-07-24T12:45:52Z",
+    "Desc": "Yes, this IR relates to security. The issue of \"Health Check failure when using SSL\" indicates a potential vulnerability in the application's SSL implementation, which could lead to security risks such as man-in-the-middle attacks or data interception. It is important to address and disclose this issue in a CVE to ensure that the necessary security measures are taken to protect the application and its users."
+  },
+  {
+    "ID": 167,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/5678",
+    "IR_Create_Time": "2019-02-11T11:15:57Z",
+    "Desc": "Yes, this IR may have security implications. The issue of sensitive information not being displayed properly could potentially lead to a situation where important updates or alerts are missed, leaving the system vulnerable to security threats. This issue should be disclosed in a CVE to raise awareness and prompt a fix to prevent potential security risks."
+  },
+  {
+    "ID": 168,
+    "IR": "https://github.com/kubevirt/containerized-data-importer/issues/637",
+    "IR_Create_Time": "2019-02-06T14:19:40Z",
+    "Desc": "Yes, this issue report may have security implications. If an upload test fails due to a specific node not being present in a cluster, it could potentially indicate a misconfiguration or possible vulnerability in the system that an attacker could exploit. This could lead to unauthorized access or other security concerns."
+  },
+  {
+    "ID": 169,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/20543",
+    "IR_Create_Time": "2020-01-13T06:08:46Z",
+    "Desc": "Yes, the issue report \"POA old Node join New chain, old data over new chain data\" does have security implications. This issue could potentially lead to data corruption or manipulation if old data from a previous chain is able to override or interfere with new data in the current chain. This could compromise the integrity and confidentiality of the data stored in the blockchain network."
+  },
+  {
+    "ID": 170,
+    "IR": "https://github.com/hashicorp/packer/issues/7355",
+    "IR_Create_Time": "2019-02-27T19:58:29Z",
+    "Desc": "Yes, this issue relates to security. The \"insecure_skip_tls_verify\" option is meant to disable TLS certificate verification, which can leave the application vulnerable to man-in-the-middle attacks. The fact that it is not working as intended means that sensitive data could be intercepted and compromised."
+  },
+  {
+    "ID": 171,
+    "IR": "https://github.com/fluorohydride/ygopro/issues/2188",
+    "IR_Create_Time": "2019-04-29T15:27:09Z",
+    "Desc": "Yes, this IR is related to security. The issue of \"Calling APITAG from lua script\" could potentially lead to security vulnerabilities such as unauthorized access, injection attacks, or data exposure if not properly handled."
+  },
+  {
+    "ID": 172,
+    "IR": "https://github.com/opencv/opencv/issues/15804",
+    "IR_Create_Time": "2019-10-29T10:27:27Z",
+    "Desc": "Yes, this IR may have security implications. The issue of a segmentation fault when inheriting from APITAG cpp classes in Python could potentially lead to a denial of service or arbitrary code execution if exploited by a malicious actor. It is important to investigate this issue further and potentially disclose it in a CVE to raise awareness and help users protect their systems."
+  },
+  {
+    "ID": 173,
+    "IR": "https://github.com/riot-os/riot/issues/11149",
+    "IR_Create_Time": "2019-03-10T16:31:48Z",
+    "Desc": "Yes, this issue report may have security implications. The hang on xtimer_spin_until could potentially be exploited by an attacker to cause a denial of service or to manipulate the system behavior in unintended ways. It is recommended to investigate further and potentially disclose this issue in a CVE if deemed necessary."
+  },
+  {
+    "ID": 174,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/5713",
+    "IR_Create_Time": "2019-02-19T15:31:48Z",
+    "Desc": "Yes, this issue report relates to security. The issue reported involves an API taking up a significant amount of memory, which could lead to a denial of service (DoS) attack. This could potentially allow an attacker to intentionally freeze systems or cause them to become unresponsive by exploiting the API's lack of resource handling."
+  },
+  {
+    "ID": 175,
+    "IR": "https://github.com/anorov/cloudflare-scrape/issues/219",
+    "IR_Create_Time": "2019-04-03T04:42:05Z",
+    "Desc": "Yes, this issue report is related to security. The error in executing Cloudflare IUAM Javascript in Jupyter Notebook could potentially be exploited by attackers to bypass Cloudflare's protection mechanisms and launch various attacks on the affected system."
+  },
+  {
+    "ID": 176,
+    "IR": "https://github.com/yeyinshi/tuzicms/issues/2",
+    "IR_Create_Time": "2019-04-26T08:47:05Z",
+    "Desc": "Yes, this IR should be disclosed in a CVE. The report mentions CSRF vulnerabilities, which allow unauthorized actions to be performed on behalf of a user. This type of vulnerability poses a significant security risk and should be addressed promptly."
+  },
+  {
+    "ID": 177,
+    "IR": "https://github.com/riot-os/riot/issues/12002",
+    "IR_Create_Time": "2019-08-13T09:19:56Z",
+    "Desc": "Yes, this IR potentially has security implications. It suggests that there may be a vulnerability in the USB functionality when used with APITAG, leading to a failure to respond to pings. This could indicate a possible denial of service or communication disruption issue, which could be exploited by an attacker."
+  },
+  {
+    "ID": 178,
+    "IR": "https://github.com/hashicorp/packer/issues/7972",
+    "IR_Create_Time": "2019-08-11T13:35:43Z",
+    "Desc": "Yes, the issue report \"Evaluate all user interpolated boot commands prior to execution\" has security implications. This is because failing to properly evaluate user input in boot commands can lead to command injection vulnerabilities, which can be exploited by attackers to execute arbitrary commands on the system. This could potentially lead to unauthorized access, data breaches, or other security incidents. Therefore, this issue should be disclosed in a CVE to raise awareness and encourage system administrators to take necessary precautions to address this vulnerability."
+  },
+  {
+    "ID": 179,
+    "IR": "https://github.com/pkp/pkp-lib/issues/4533",
+    "IR_Create_Time": "2019-02-23T17:01:40Z",
+    "Desc": "Yes, this issue report may have security implications. \n\nThe issue of duplicated content when submitting an invalid plugin's settings form could potentially be exploited by an attacker to inject malicious code or content into the system. This could lead to security vulnerabilities such as cross-site scripting (XSS) attacks or other types of injection attacks. Therefore, this issue should be properly investigated and fixed to prevent any potential security risks."
+  },
+  {
+    "ID": 180,
+    "IR": "https://github.com/syoyo/tinyexr/issues/114",
+    "IR_Create_Time": "2019-03-14T09:54:29Z",
+    "Desc": "Yes, this IR relates to security. The issue \"PATHTAG fails to parse\" suggests a potential vulnerability related to parsing functionality in the system, which could potentially be exploited by attackers to manipulate the system behavior or disclose sensitive information."
+  },
+  {
+    "ID": 181,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/540",
+    "IR_Create_Time": "2019-04-29T23:06:24Z",
+    "Desc": "Yes.\n\nThis issue relates to security because it involves a stack reference being created on the wrong operand of a Load Effective Address (LEA) instruction. This could potentially lead to memory corruption or other vulnerabilities if not handled properly, making it a security concern that should be disclosed in CVE."
+  },
+  {
+    "ID": 182,
+    "IR": "https://github.com/processing/processing/issues/5949",
+    "IR_Create_Time": "2019-11-11T11:52:38Z",
+    "Desc": "Yes, this IR has security issues. The issue of providing a download link in HTTP instead of HTTPS can make the data transmitted over the network vulnerable to interception and manipulation by malicious actors. This can lead to potential security breaches and compromise the integrity of the data being downloaded."
+  },
+  {
+    "ID": 183,
+    "IR": "https://github.com/cyrusimap/cyrus-imapd/issues/2886",
+    "IR_Create_Time": "2019-10-02T01:09:51Z",
+    "Desc": "Yes, this issue report relates to security. The inconsistency in handling deprecated imap options could potentially lead to security vulnerabilities if attackers are able to exploit this inconsistency to manipulate email functionality in a malicious way. This could potentially lead to unauthorized access to sensitive information or other malicious activities."
+  },
+  {
+    "ID": 184,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/6810",
+    "IR_Create_Time": "2019-11-21T11:24:23Z",
+    "Desc": "Yes, this IR may have security implications. The issue involves a lost monitor position after waking from sleep, which could potentially lead to sensitive information being visible on the screen to unauthorized users. This could be considered a security vulnerability as it could potentially expose confidential data."
+  },
+  {
+    "ID": 185,
+    "IR": "https://github.com/ktorio/ktor/issues/1334",
+    "IR_Create_Time": "2019-09-11T00:05:29Z",
+    "Desc": "Yes, this IR has security implications. The issue of not being able to disable logging for No APITAG patterns specified could potentially leak sensitive information to unauthorized users or attackers, putting the system at risk. This could lead to unauthorized access or data breaches."
+  },
+  {
+    "ID": 186,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3466",
+    "IR_Create_Time": "2019-07-25T02:07:30Z",
+    "Desc": "Yes, this issue report may have security implications. A buffer overflow in a function like 'strncmp' can potentially lead to a variety of security vulnerabilities, such as arbitrary code execution or denial of service attacks. It is important to further investigate and assess the severity of this issue to determine if it should be disclosed in a CVE."
+  },
+  {
+    "ID": 187,
+    "IR": "https://github.com/htacg/tidy-html5/issues/804",
+    "IR_Create_Time": "2019-02-21T09:11:24Z",
+    "Desc": "Yes, this IR appears to have a security issue. The mention of \"Publishing in VS NUMBERTAG ERRORTAG\" could indicate a vulnerability related to publishing in Visual Studio with potentially exploitable error tags. This could potentially lead to information disclosure or other security threats."
+  },
+  {
+    "ID": 188,
+    "IR": "https://github.com/libraw/libraw/issues/225",
+    "IR_Create_Time": "2019-07-08T21:14:33Z",
+    "Desc": "Yes, this issue report has a security issue that needs to be disclosed in CVE. \n\nThe issue report mentions \"Divide by zero\", which is a common software vulnerability that can lead to crashes, denial of service, or potentially even code execution if not properly handled. This vulnerability can be exploited by attackers to cause system instability or potentially execute malicious code. Therefore, it is crucial to address and disclose this security issue in order to protect users and systems."
+  },
+  {
+    "ID": 189,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/6636",
+    "IR_Create_Time": "2019-10-02T19:37:21Z",
+    "Desc": "Yes, this IR contains a security issue. The hotkey : and b triggering the emoji feature causing the system to crash could potentially be exploited by an attacker to cause a denial of service (DoS) attack on the system. This vulnerability should be disclosed in a CVE to inform users and allow for a patch to be developed."
+  },
+  {
+    "ID": 190,
+    "IR": "https://github.com/elabftw/elabftw/issues/1352",
+    "IR_Create_Time": "2019-06-13T16:04:53Z",
+    "Desc": "Yes, this issue may have security implications. The lack of access after logging in on the APITAG webpage could indicate potential authentication or authorization issues, which can lead to unauthorized access to sensitive information or functionality. It is important to further investigate and potentially disclose this issue in a CVE to address and mitigate any security risks."
+  },
+  {
+    "ID": 191,
+    "IR": "https://github.com/ethereum/go-ethereum/issues/19145",
+    "IR_Create_Time": "2019-02-20T21:51:37Z",
+    "Desc": "Yes, this issue report \"Geth NUMBERTAG returns zero for non zero storage variables in any contracts\" potentially has security implications. If the Geth client is incorrectly reporting zero for non-zero storage variables in contracts, it could lead to incorrect behavior in smart contracts and potentially result in vulnerabilities such as data manipulation attacks or financial losses. It is recommended to investigate further and potentially disclose this issue in a CVE to raise awareness and prompt the development of a patch."
+  },
+  {
+    "ID": 192,
+    "IR": "https://github.com/antswordproject/antsword/issues/201",
+    "IR_Create_Time": "2019-07-29T07:43:29Z",
+    "Desc": "Yes, this IR has security issues. The title and body of the report indicate a command execution vulnerability, which is a critical security issue that can allow an attacker to execute arbitrary commands on the system. This vulnerability should be addressed and disclosed in a CVE to alert users and encourage them to update their systems."
+  },
+  {
+    "ID": 193,
+    "IR": "https://github.com/pkp/pkp-lib/issues/4915",
+    "IR_Create_Time": "2019-07-11T18:10:35Z",
+    "Desc": "Yes, this issue report raises a security concern. The disclosure of reviewers' identities can potentially lead to privacy breaches and unauthorized access to sensitive information. This could impact the confidentiality and integrity of the review process."
+  },
+  {
+    "ID": 194,
+    "IR": "https://github.com/antswordproject/antsword/issues/195",
+    "IR_Create_Time": "2019-06-26T03:46:53Z",
+    "Desc": "Yes, this issue report \"5\" contains a potential security issue. The use of \"NUMBERTAG\" in the body of the report suggests that there may be a vulnerability related to improper handling or parsing of user input, which could lead to security risks such as code injection or data manipulation."
+  },
+  {
+    "ID": 195,
+    "IR": "https://github.com/pkp/pkp-lib/issues/5384",
+    "IR_Create_Time": "2020-01-12T09:47:48Z",
+    "Desc": "Yes, this issue report may have security implications. The OAI Interface APITAG (OMP, Masterbranch) could potentially be vulnerable to security flaws if not properly secured. It is important to assess the specific details of the issue report to determine if it warrants being disclosed in a CVE."
+  },
+  {
+    "ID": 196,
+    "IR": "https://github.com/xoops/xoopscore25/issues/731",
+    "IR_Create_Time": "2019-12-03T12:19:46Z",
+    "Desc": "Yes, this issue report may have security implications. The title and body of the report do not provide enough information to determine the exact security issue, but the mention of a \"Module Profile\" suggests that there may be vulnerabilities or weaknesses in a specific module that could be exploited by malicious actors. It would be important to investigate further and potentially disclose any security issues in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 197,
+    "IR": "https://github.com/projectacrn/acrn-hypervisor/issues/3549",
+    "IR_Create_Time": "2019-08-08T01:16:47Z",
+    "Desc": "Yes, this issue report is related to security. The issue \"out of bounds buffer access\" indicates a potential vulnerability that could be exploited by an attacker to gain unauthorized access or execute malicious code."
+  },
+  {
+    "ID": 198,
+    "IR": "https://github.com/libyal/libpff/issues/76",
+    "IR_Create_Time": "2019-02-12T21:20:42Z",
+    "Desc": "Yes, this issue report may have security implications. The fact that there is an invalid pst file signature in Python could potentially lead to security vulnerabilities such as data corruption, unauthorized access, or the execution of malicious code. It is important to investigate and address this issue promptly to prevent any potential security risks."
+  },
+  {
+    "ID": 199,
+    "IR": "https://github.com/opencv/opencv/issues/13991",
+    "IR_Create_Time": "2019-03-06T22:53:41Z",
+    "Desc": "Yes, this issue report potentially has security implications. The import error mentioned in the body of the report could indicate a vulnerability in the application's handling of imports, which could potentially be exploited by an attacker to execute malicious code."
+  },
+  {
+    "ID": 200,
+    "IR": "https://github.com/portainer/portainer/issues/3233",
+    "IR_Create_Time": "2019-10-07T02:51:55Z",
+    "Desc": "Yes, this IR has security issues. The \"Path traversal in volume browser file upload\" vulnerability indicates that an attacker could potentially upload a file with malicious code, allowing them to navigate through directories and potentially access sensitive system files. This is a severe security risk that should be disclosed in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 201,
+    "IR": "https://github.com/elabftw/elabftw/issues/1575",
+    "IR_Create_Time": "2019-10-24T20:50:40Z",
+    "Desc": "Yes, this IR may relate to a security issue as a login feature being disabled could potentially indicate a vulnerability in the authentication process. This could be a potential security concern if unauthorized access is possible or if sensitive information is at risk."
+  },
+  {
+    "ID": 202,
+    "IR": "https://github.com/opencv/opencv/issues/14976",
+    "IR_Create_Time": "2019-07-04T02:42:46Z",
+    "Desc": "Yes, this issue report may have security implications. The segmentation fault caused by APITAG could potentially be exploited by an attacker to execute arbitrary code or crash the application, leading to potential denial of service or other security vulnerabilities. Therefore, this issue should be investigated further and potentially disclosed in a CVE."
+  },
+  {
+    "ID": 203,
+    "IR": "https://github.com/hashicorp/packer/issues/7626",
+    "IR_Create_Time": "2019-05-09T02:53:12Z",
+    "Desc": "Yes, this issue report has security implications. \n\nThe issue of the shell provisioner hanging on `sudo g` could potentially allow an attacker to manipulate the script being run inline and potentially escalate their privileges on the system. This type of vulnerability could lead to unauthorized access or execution of malicious code on the system, making it a security issue that should be disclosed in CVE."
+  },
+  {
+    "ID": 204,
+    "IR": "https://github.com/ktorio/ktor/issues/1495",
+    "IR_Create_Time": "2019-12-14T09:38:03Z",
+    "Desc": "Yes, this issue report relates to security. The fact that the IR mentions \"Authentication of session token\" indicates that there may be vulnerabilities or weaknesses in the way session tokens are being authenticated, which could potentially lead to unauthorized access to sensitive information or resources. This is a critical security issue that should be disclosed in a CVE."
+  },
+  {
+    "ID": 205,
+    "IR": "https://github.com/kubevirt/containerized-data-importer/issues/674",
+    "IR_Create_Time": "2019-02-26T01:40:27Z",
+    "Desc": "Yes, this IR has security implications. The fact that performing basic operations such as installing, removing, and reinstalling causes the controller to crash suggests there may be underlying vulnerabilities in the system that could potentially be exploited by an attacker. It is important to investigate and address these issues to prevent potential security risks."
+  },
+  {
+    "ID": 206,
+    "IR": "https://github.com/riot-os/riot/issues/11162",
+    "IR_Create_Time": "2019-03-12T14:20:58Z",
+    "Desc": "Yes, this IR relates to security. The issue of nrfmin being broken when DEVELHELP is activated could potentially lead to security vulnerabilities in the system. This could allow unauthorized access or manipulation of the system, making it a security concern that should be disclosed in CVE."
+  },
+  {
+    "ID": 207,
+    "IR": "https://github.com/hashicorp/packer/issues/7634",
+    "IR_Create_Time": "2019-05-13T02:42:33Z",
+    "Desc": "Yes, this IR relates to security. The issue described in the report indicates that temporary API tag scripts are hardcoded to be stored under the %TEMP% directory instead of using a more secure temp_path variable location. This can potentially lead to security vulnerabilities such as privilege escalation, file manipulation, or unauthorized access to sensitive data."
+  },
+  {
+    "ID": 208,
+    "IR": "https://github.com/pkp/pkp-lib/issues/4486",
+    "IR_Create_Time": "2019-02-13T19:24:33Z",
+    "Desc": "Yes, this IR has security implications. The Google Analytics plugin settings modal returning Ajax/JSON error could potentially expose sensitive information or allow attackers to exploit vulnerabilities in the plugin. This issue should be disclosed in a CVE to raise awareness and prompt a fix from the vendor."
+  },
+  {
+    "ID": 209,
+    "IR": "https://github.com/qpdf/qpdf/issues/286",
+    "IR_Create_Time": "2019-02-12T15:41:10Z",
+    "Desc": "Yes, this issue report likely has security implications. The inability of Windows to acquire a crypt context with a new keyset could indicate potential vulnerabilities related to cryptography and data protection. This could potentially be exploited by attackers to gain unauthorized access to sensitive information."
+  },
+  {
+    "ID": 210,
+    "IR": "https://github.com/hashicorp/packer/issues/8197",
+    "IR_Create_Time": "2019-10-04T18:56:00Z",
+    "Desc": "Yes, this IR has security issues. The issue of \"Packer crash using openstack builder\" could potentially lead to a denial of service or other security vulnerabilities if exploited."
+  },
+  {
+    "ID": 211,
+    "IR": "https://github.com/hashicorp/packer/issues/7926",
+    "IR_Create_Time": "2019-07-29T08:51:46Z",
+    "Desc": "Yes, this issue report may have security implications. The error message \"Error executing Ansible: Non zero exit status\" could indicate a failure in running Ansible, which may result in misconfigurations or vulnerabilities in the environment. This could potentially lead to security issues, making it important to investigate further and potentially disclose in CVE."
+  },
+  {
+    "ID": 212,
+    "IR": "https://github.com/portainer/portainer/issues/3034",
+    "IR_Create_Time": "2019-07-23T19:44:05Z",
+    "Desc": "Yes, this issue report relates to security. The inability to grant access to users/groups when private registry authentication is enabled can potentially lead to unauthorized access to sensitive data stored in the registry. This vulnerability could be exploited by malicious actors to access confidential information or modify data without proper authorization."
+  },
+  {
+    "ID": 213,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/965",
+    "IR_Create_Time": "2019-09-02T06:18:17Z",
+    "Desc": "Yes, this IR relates to security. The issue of bad OMF data when importing a library could potentially lead to security vulnerabilities such as data corruption, unauthorized access, or remote code execution. It is important to disclose this issue in a Common Vulnerabilities and Exposures (CVE) report to alert users and developers to the potential risks."
+  },
+  {
+    "ID": 214,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/437",
+    "IR_Create_Time": "2019-04-16T04:27:25Z",
+    "Desc": "Yes, this issue report potentially has security implications. The mention of an \"infinite loop\" in the context of an API could indicate a possible Denial of Service (DoS) vulnerability, which could be exploited by malicious actors to overload the system and disrupt service availability. This issue should be further investigated and addressed to prevent potential security risks."
+  },
+  {
+    "ID": 215,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/764",
+    "IR_Create_Time": "2019-07-08T15:45:53Z",
+    "Desc": "Yes, this issue report \"MIPS ELF loader issues\" may have security implications. \nLoading a malicious ELF file could potentially lead to buffer overflow, code execution, or other exploitation of vulnerabilities in the loader. These issues could be exploited by an attacker to compromise the system's security. It is important to further investigate and address these potential security issues."
+  },
+  {
+    "ID": 216,
+    "IR": "https://github.com/ctz/rustls/issues/253",
+    "IR_Create_Time": "2019-05-21T13:07:17Z",
+    "Desc": "Yes, this IR may potentially have security implications. The mention of a stack overflow could indicate a possible vulnerability that could be exploited by an attacker to execute arbitrary code or crash the application, leading to a denial of service. This issue should be investigated further to determine the extent of the security risk and if it warrants a CVE disclosure."
+  },
+  {
+    "ID": 217,
+    "IR": "https://github.com/shi-yang/jnoj/issues/47",
+    "IR_Create_Time": "2019-09-08T06:38:49Z",
+    "Desc": "Yes, this IR has security issues. The issue reported is related to a functionality where group creators and administrators are unable to delete groups they have created. This lack of proper access control and permissions for group management could potentially lead to unauthorized access to group content and compromise the security and confidentiality of group members' information."
+  },
+  {
+    "ID": 218,
+    "IR": "https://github.com/ctz/rustls/issues/332",
+    "IR_Create_Time": "2020-01-05T22:41:18Z",
+    "Desc": "Yes, this IR has security implications. The issue involves support for reading ECDSA private keys in the output format of the openssl ecparam genkey command. This functionality could potentially lead to vulnerabilities if the private keys are not properly protected or if there are weaknesses in the key generation process. Therefore, it is important to address this issue and disclose it in a Common Vulnerabilities and Exposures (CVE) report."
+  },
+  {
+    "ID": 219,
+    "IR": "https://github.com/axiomatic-systems/bento4/issues/451",
+    "IR_Create_Time": "2019-11-02T16:04:19Z",
+    "Desc": "Yes, this IR may have security issues related to encryption and decryption of audio in streaming protocols like DASH and HLS. If the audio is not properly decrypted, it could potentially lead to unauthorized access to sensitive information or content. This issue may need to be disclosed in a CVE to raise awareness and prompt a resolution."
+  },
+  {
+    "ID": 220,
+    "IR": "https://github.com/keystonejs/keystone/issues/1943",
+    "IR_Create_Time": "2019-11-10T08:00:32Z",
+    "Desc": "Yes, this IR likely has security issues. The error message \"request entity too large\" suggests that there may be a vulnerability in the API allowing for oversized requests, which could potentially lead to denial of service attacks or other security risks."
+  },
+  {
+    "ID": 221,
+    "IR": "https://github.com/pocoproject/poco/issues/2702",
+    "IR_Create_Time": "2019-05-23T15:43:38Z",
+    "Desc": "Yes, this issue report may have security implications. The report states that an \"APITAG crash\" occurred, which could indicate a vulnerability or exploit in the API that could potentially be exploited by an attacker. This crash may lead to data breaches, denial of service attacks, or other security risks. It is important to investigate further and address any potential security issues related to this crash."
+  },
+  {
+    "ID": 222,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/511",
+    "IR_Create_Time": "2019-04-25T03:05:42Z",
+    "Desc": "Yes, this issue report may have security implications. The option to show references to and edit data types in a decompiler window could potentially expose sensitive information or allow for manipulation of data types in a way that could lead to security vulnerabilities. This type of functionality should be carefully reviewed and possibly restricted to prevent unauthorized access or modification of data."
+  },
+  {
+    "ID": 223,
+    "IR": "https://github.com/hashicorp/packer/issues/8171",
+    "IR_Create_Time": "2019-09-29T16:22:42Z",
+    "Desc": "Yes, this IR relates to security. The issue reported involves a potential hang during the Windows installation process, specifically during the API initialization phase. This could indicate a potential vulnerability in the system's handling of API calls, which could potentially be exploited by malicious actors to disrupt the installation process or potentially gain unauthorized access to the system."
+  },
+  {
+    "ID": 224,
+    "IR": "https://github.com/portainer/portainer/issues/3151",
+    "IR_Create_Time": "2019-09-10T14:46:30Z",
+    "Desc": "Yes, this IR relates to security. The issue of being unable to create access to custom registries with authentication enabled could potentially lead to unauthorized access to sensitive data if not addressed. It is important to disclose this issue in a CVE to ensure that users are aware of the security risk and can take appropriate measures to protect their data."
+  },
+  {
+    "ID": 225,
+    "IR": "https://github.com/ktorio/ktor/issues/1453",
+    "IR_Create_Time": "2019-11-20T17:21:22Z",
+    "Desc": "Yes, this issue report does have security implications. Exposing API callbacks could potentially lead to unauthorized access, data leakage, or other security vulnerabilities if not properly secured. This information should be disclosed in a CVE to alert users and developers to the potential risks."
+  },
+  {
+    "ID": 226,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/1428",
+    "IR_Create_Time": "2020-01-14T03:22:39Z",
+    "Desc": "Yes, this IR has security issues. \nThe issue \"Java Varnode Pointer Dereference\" is related to a vulnerability in Java that allows attackers to dereference pointers and potentially execute arbitrary code, leading to potential security breaches. This type of vulnerability can be exploited by attackers to gain unauthorized access to a system or cause a denial of service. It is important to address this issue and disclose it in the Common Vulnerabilities and Exposures (CVE) list for awareness and mitigation by the affected parties."
+  },
+  {
+    "ID": 227,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/6194",
+    "IR_Create_Time": "2019-06-29T17:06:47Z",
+    "Desc": "Yes, this IR may have security implications. Disabling pin notifications client side could potentially lead to security vulnerabilities such as unauthorized access or information disclosure. It could also impact the overall security of the application by bypassing important security controls. Therefore, this issue should be investigated further and possibly disclosed in a CVE."
+  },
+  {
+    "ID": 228,
+    "IR": "https://github.com/nationalsecurityagency/ghidra/issues/122",
+    "IR_Create_Time": "2019-03-08T13:43:10Z",
+    "Desc": "Yes, this issue report relates to security. The issue of MSVC float comparison not decompiling properly could lead to vulnerabilities such as possible integer overflow or buffer overflow, which could potentially be exploited by an attacker."
+  },
+  {
+    "ID": 229,
+    "IR": "https://github.com/telegramdesktop/tdesktop/issues/5863",
+    "IR_Create_Time": "2019-03-29T17:17:06Z",
+    "Desc": "Yes, this IR relates to security. The issue described in the report involves auto blocking new chat requests that are not from contacts, which could potentially be a security concern if the blocking mechanism is not implemented correctly or if there are vulnerabilities in the process of determining whether a chat request is from a contact."
+  },
+  {
+    "ID": 230,
+    "IR": "https://github.com/lifei6671/mindoc/issues/555",
+    "IR_Create_Time": "2019-11-13T13:43:16Z",
+    "Desc": "Yes, this IR may have security implications as it mentions \"APITAG \u955c\u50cf\", which could potentially be related to API endpoints or image handling in software. Further analysis is needed to determine if there are any specific security vulnerabilities that need to be disclosed in a CVE."
+  },
+  {
+    "ID": 231,
+    "IR": "https://github.com/opencv/opencv/issues/14522",
+    "IR_Create_Time": "2019-05-09T09:42:25Z",
+    "Desc": "Yes, this IR relates to security because a master build failing with a specific configuration (gtk2 Opengl) could indicate potential vulnerabilities or issues within the code that could be exploited by attackers. This could lead to security risks if not addressed properly."
+  },
+  {
+    "ID": 232,
+    "IR": "https://github.com/cyrusimap/cyrus-imapd/issues/2862",
+    "IR_Create_Time": "2019-09-06T06:11:10Z",
+    "Desc": "Yes, this issue report may have security implications. The issue of returning wrong header fields when :all is not used could potentially lead to information disclosure or manipulation of sensitive data, depending on the context in which it occurs. It is advisable to investigate further and potentially disclose this in a CVE if necessary."
+  }
+]

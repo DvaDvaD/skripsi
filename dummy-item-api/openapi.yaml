@@ -1,0 +1,211 @@
+openapi: '3.0.0'
+info:
+  title: 'Item Management API'
+  version: '1.0.0'
+  description: 'A simple CRUD API for managing items with user authentication.'
+servers:
+  - url: 'http://localhost:3000'  # Adjust in production!
+    description: 'Development server'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: 'http'
+      scheme: 'bearer'
+      bearerFormat: 'JWT'
+  schemas:
+    Item:
+      type: 'object'
+      properties:
+        id:
+          type: 'integer'
+          description: 'The item ID.'
+        name:
+          type: 'string'
+          description: 'The item name.'
+        description:
+          type: 'string'
+          description: 'A description of the item.'
+        user_id:
+          type: 'integer'
+          description: 'The ID of the user who owns the item.'
+      required:
+        - name
+        - user_id
+    ItemInput:  # Separate schema for input (POST/PUT)
+      type: 'object'
+      properties:
+        name:
+          type: 'string'
+          description: 'The item name.'
+        description:
+          type: 'string'
+          description: 'A description of the item.'
+      required:
+        - name
+security:
+  - bearerAuth: []
+paths:
+  /register:
+    post:
+      summary: 'Register a new user'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: 'object'
+              properties:
+                username: { type: 'string', example: 'testuser' }
+                password: { type: 'string', example: 'securepassword' }
+              required:
+                - username
+                - password
+      responses:
+        '201':
+          description: 'User registered successfully.'
+          content:
+            application/json:
+              schema:
+                type: 'object'
+                properties:
+                  message: { type: 'string' }
+                  userId: { type: 'integer' }
+        '400': { description: 'Bad Request - Missing username or password.' }
+        '409': { description: 'Conflict - Username already exists.' }
+        '500': { description: 'Internal Server Error' }
+      security: []  # No authentication required for registration
+  /login:
+    post:
+      summary: 'Log in an existing user'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: 'object'
+              properties:
+                username: { type: 'string' }
+                password: { type: 'string' }
+              required:
+                - username
+                - password
+      responses:
+        '200':
+          description: 'Successful login'
+          content:
+            application/json:
+              schema:
+                type: 'object'
+                properties:
+                  token: { type: 'string', description: 'JWT token' }
+        '400': { description: 'Bad Request - Missing username or password.' }
+        '401': { description: 'Unauthorized - Invalid credentials' }
+        '500': { description: 'Internal Server Error' }
+      security: []  # No authentication required for login
+  /items:
+    get:
+      summary: 'Get all items for the logged-in user'
+      responses:
+        '200':
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                type: 'array'
+                items:
+                  $ref: '#/components/schemas/Item'
+        '401': { description: 'Unauthorized' }
+        '500': { description: 'Internal Server Error' }
+    post:
+      summary: 'Create a new item'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemInput'
+      responses:
+        '201':
+          description: 'Item created successfully'
+          content:
+            application/json:
+              schema:
+                type: 'object'
+                properties:
+                  message: { type: 'string' }
+                  id: { type: 'integer', description: 'The ID of the newly created item.' }
+        '400': { description: 'Bad Request - Missing required fields' }
+        '401': { description: 'Unauthorized' }
+        '500': { description: 'Internal Server Error' }
+  /items/{id}:
+    get:
+      summary: 'Get an item by ID'
+      parameters:
+        - name: 'id'
+          in: 'path'
+          required: true
+          description: 'ID of the item to retrieve'
+          schema:
+            type: 'integer'
+      responses:
+        '200':
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+        '401': { description: 'Unauthorized' }
+        '403': { description: 'Forbidden - User does not have permission' }
+        '404': { description: 'Item not found' }
+        '500': { description: 'Internal Server Error' }
+    put:
+      summary: 'Update an item by ID'
+      parameters:
+        - name: 'id'
+          in: 'path'
+          required: true
+          description: 'ID of the item to update'
+          schema:
+            type: 'integer'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemInput'
+      responses:
+        '200':
+          description: 'Item updated successfully'
+          content:
+            application/json:
+              schema:
+                type: 'object'
+                properties:
+                  message: { type: 'string' }
+        '400': { description: 'Bad Request - Missing required fields' }
+        '401': { description: 'Unauthorized' }
+        '403': { description: 'Forbidden - User does not have permission' }
+        '404': { description: 'Item not found' }
+        '500': { description: 'Internal Server Error' }
+    delete:
+      summary: 'Delete an item by ID'
+      parameters:
+        - name: 'id'
+          in: 'path'
+          required: true
+          description: 'ID of the item to delete'
+          schema:
+            type: 'integer'
+      responses:
+        '200':
+          description: 'Item deleted successfully'
+          content:
+            application/json:
+              schema:
+                type: 'object'
+                properties:
+                  message: { type: 'string' }
+        '401': { description: 'Unauthorized' }
+        '403': { description: 'Forbidden - User does not have permission' }
+        '404': { description: 'Item not found' }
+        '500': { description: 'Internal Server Error' }
