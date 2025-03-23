@@ -1,3 +1,9 @@
 **/node_modules
 **/*.db
 **/.venv
+**/morest
+**/arat-rl
+**/restler
+**/resttestgen
+**/schemathesis
+**/apis
