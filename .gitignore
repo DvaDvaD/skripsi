@@ -6,4 +6,5 @@
 **/restler
 **/resttestgen
 **/schemathesis
-**/apis
+**/apis/*
+!**/apis/CUSTOM-API
