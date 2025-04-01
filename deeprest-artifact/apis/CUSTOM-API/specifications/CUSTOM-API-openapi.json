@@ -1,207 +1,394 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Item Management API",
+    "version": "1.0.0",
+    "description": "A simple CRUD API for managing items with user authentication."
+  },
   "servers": [
     {
-      "url": "http://localhost:8080"
+      "url": "http://localhost:3000",
+      "description": "Development server"
     }
   ],
-  "info": {
-    "title": "Bookstore",
-    "version": "1.0",
-    "description": "This API enables the management of a bookstore. You can add, update, and remove the books in the store.",
-    "contact": {
-      "name": "Davide Corradini",
-      "email": "davide.corradini@univr.it"
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "Item": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "The item ID."
+          },
+          "name": {
+            "type": "string",
+            "description": "The item name."
+          },
+          "description": {
+            "type": "string",
+            "description": "A description of the item."
+          },
+          "user_id": {
+            "type": "integer",
+            "description": "The ID of the user who owns the item."
+          }
+        },
+        "required": [
+          "name",
+          "user_id"
+        ]
+      },
+      "ItemInput": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The item name."
+          },
+          "description": {
+            "type": "string",
+            "description": "A description of the item."
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
     }
   },
-  "tags": [
+  "security": [
     {
-      "description": "Management of the books in the bookstore",
-      "name": "Book"
+      "bearerAuth": []
     }
   ],
   "paths": {
-    "/books": {
-      "get": {
-        "tags": [
-          "Book"
-        ],
-        "operationId": "getBooks",
+    "/register": {
+      "post": {
+        "summary": "Register a new user",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "example": "testuser"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "securepassword"
+                  }
+                },
+                "required": [
+                  "username",
+                  "password"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "User registered successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    },
+                    "userId": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request - Missing username or password."
+          },
+          "409": {
+            "description": "Conflict - Username already exists."
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": []
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Log in an existing user",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "username",
+                  "password"
+                ]
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
+            "description": "Successful login",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string",
+                      "description": "JWT token"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request - Missing username or password."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": []
+      }
+    },
+    "/items": {
+      "get": {
+        "summary": "Get all items for the logged-in user",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Book"
+                    "$ref": "#/components/schemas/Item"
                   }
                 }
               }
-            },
-            "description": "The list of book has been successfully retrieved."
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new item",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Item created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "integer",
+                      "description": "The ID of the newly created item."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request - Missing required fields"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
     },
-    "/book/{bookId}": {
+    "/items/{id}": {
       "get": {
-        "tags": [
-          "Book"
-        ],
-        "operationId": "getBookById",
+        "summary": "Get an item by ID",
         "parameters": [
           {
-            "name": "bookId",
-            "description": "The unique identifier of the book in the system.",
+            "name": "id",
             "in": "path",
             "required": true,
+            "description": "ID of the item to retrieve",
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "integer"
             }
           }
         ],
         "responses": {
           "200": {
+            "description": "Successful operation",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Book"
+                  "$ref": "#/components/schemas/Item"
                 }
               }
-            },
-            "description": "The book has been successfully retrieved."
-          }
-        }
-      }
-    },
-    "/book": {
-      "post": {
-        "tags": [
-          "Book"
-        ],
-        "operationId": "createBook",
-        "parameters": [
-          {
-            "name": "title",
-            "description": "The title of the book.",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           },
-          {
-            "name": "author",
-            "description": "The author of the book.",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
+          "401": {
+            "description": "Unauthorized"
           },
-          {
-            "name": "price",
-            "description": "The price of the book.",
-            "in": "query",
-            "schema": {
-              "type": "number",
-              "format": "float"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Book"
-                }
-              }
-            },
-            "description": "The book has been successfully created. A copy of the created book is returned."
+          "403": {
+            "description": "Forbidden - User does not have permission"
+          },
+          "404": {
+            "description": "Item not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
       "put": {
-        "tags": [
-          "Book"
+        "summary": "Update an item by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID of the item to update",
+            "schema": {
+              "type": "integer"
+            }
+          }
         ],
-        "operationId": "updateBook",
         "requestBody": {
+          "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/ItemInput"
               }
             }
           }
         },
         "responses": {
           "200": {
+            "description": "Item updated successfully",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Book"
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
-            },
-            "description": "The book has been successfully updated. A copy of the updates book is returned."
+            }
+          },
+          "400": {
+            "description": "Bad Request - Missing required fields"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden - User does not have permission"
+          },
+          "404": {
+            "description": "Item not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
       "delete": {
-        "tags": [
-          "Book"
-        ],
-        "operationId": "deleteBookById",
+        "summary": "Delete an item by ID",
         "parameters": [
           {
             "name": "id",
-            "description": "The unique identifier of the book in the system.",
-            "in": "query",
+            "in": "path",
             "required": true,
+            "description": "ID of the item to delete",
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "integer"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "The book has been successfully deleted."
+            "description": "Item deleted successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden - User does not have permission"
+          },
+          "404": {
+            "description": "Item not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
-      }
-    }
-  },
-  "components": {
-    "schemas": {
-      "Book": {
-        "properties": {
-          "id": {
-            "description": "The unique identifier of the book in the system.",
-            "type": "integer",
-            "format": "int64",
-            "example": 1
-          },
-          "title": {
-            "description": "The title of the book.",
-            "type": "string",
-            "example": "Software Engineering, Vol. 1"
-          },
-          "author": {
-            "description": "The author of the book.",
-            "type": "string",
-            "example": "Mariano Ceccato"
-          },
-          "price": {
-            "description": "The price of the book.",
-            "type": "number",
-            "format": "float",
-            "example": 16.5
-          }
-        },
-        "type": "object"
       }
     }
   }

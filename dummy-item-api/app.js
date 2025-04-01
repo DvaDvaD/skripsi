@@ -49,7 +49,9 @@ function authenticateToken(req, res, next) {
 app.post('/register', async (req, res) => {
   try {
     const { username, password } = req.body;
-    if (!username || !password) return res.status(400).json({ message: 'Username and password are required.' });
+    if (!username || typeof username !== 'string' || !password || typeof password !== 'string') {
+      return res.status(400).json({ message: 'Username and password are required and must be strings.' });
+    }
     const hashedPassword = await bcrypt.hash(password, 10);
     db.run('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], function (err) {
       if (err) {
@@ -68,7 +70,10 @@ app.post('/register', async (req, res) => {
 // --- User Login --- (same as before)
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
-  if (!username || !password) return res.status(400).json({ message: 'Username and password are required.' });
+  // Improved Validation: Check for existence AND type
+  if (!username || typeof username !== 'string' || !password || typeof password !== 'string') {
+    return res.status(400).json({ message: 'Username and password are required and must be strings.' });
+  }
   db.get('SELECT * FROM users WHERE username = ?', [username], async (err, user) => {
     if (err) { console.error(err); return res.status(500).json({ message: 'Internal Server Error' }); }
     if (user && await bcrypt.compare(password, user.password)) {
