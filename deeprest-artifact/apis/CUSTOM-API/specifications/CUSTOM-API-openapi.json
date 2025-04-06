@@ -72,6 +72,7 @@
     "/register": {
       "post": {
         "summary": "Register a new user",
+        "operationId": "registerUser",
         "requestBody": {
           "required": true,
           "content": {
@@ -131,6 +132,7 @@
     "/login": {
       "post": {
         "summary": "Log in an existing user",
+        "operationId": "loginUser",
         "requestBody": {
           "required": true,
           "content": {
@@ -186,6 +188,7 @@
     "/items": {
       "get": {
         "summary": "Get all items for the logged-in user",
+        "operationId": "getItems",
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -210,6 +213,7 @@
       },
       "post": {
         "summary": "Create a new item",
+        "operationId": "createItem",
         "requestBody": {
           "required": true,
           "content": {
@@ -255,6 +259,7 @@
     "/items/{id}": {
       "get": {
         "summary": "Get an item by ID",
+        "operationId": "getItemById",
         "parameters": [
           {
             "name": "id",
@@ -293,6 +298,7 @@
       },
       "put": {
         "summary": "Update an item by ID",
+        "operationId": "updateItemById",
         "parameters": [
           {
             "name": "id",
@@ -349,6 +355,7 @@
       },
       "delete": {
         "summary": "Delete an item by ID",
+        "operationId": "deleteItemById",
         "parameters": [
           {
             "name": "id",
